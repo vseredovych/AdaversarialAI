@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.16)  16 APR 2020 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.16)  20 APR 2020 17:53
 entering extended mode
 **./CourseWork.tex
 (CourseWork.tex
@@ -517,6 +517,24 @@ Package caption Info: Standard document class detected.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
+(D:\Apps\MickTech\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(D:\Apps\MickTech\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
 (D:\Apps\MickTech\tex/latex/l3backend\l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count267
@@ -524,28 +542,28 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 ) (CourseWork.aux)
 \openout1 = `CourseWork.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring OFF on input line 46.
+Package hyperref Info: Link coloring OFF on input line 73.
 
 (D:\Apps\MickTech\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -558,9 +576,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count268
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \ref on input line 73.
+LaTeX Info: Redefining \pageref on input line 73.
+LaTeX Info: Redefining \nameref on input line 73.
 
 (CourseWork.out) (CourseWork.out)
 \@outlinefile=\write3
@@ -641,70 +659,78 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.106 	\chapter
-               {Привіт, Світe!} [2
+l.150 	\chapter
+               {Класифікація атак} [2
 
 ]
 {\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 2.
+(D:\Apps\MickTech\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-109.
+163.
+
 (D:\Apps\MickTech\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ) [3
 
-]
+] [4]
 {\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 3.
-[4
-
-]
-{\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 4.
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
+{\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 4.
+[6
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
 \T2A/cmtt/m/n/14.4 wiki / %D0 % AF % D0 % BA _ %D0 % B2 % D1 % 87 % D0 % B8 % D
 1 % 82 % D0 % B8 % D1 % 81 % D1 %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
 \T2A/cmtt/m/n/14.4 8C _ %D0 % BA % D1 % 80 % D0 % B0 % D1 % 89 % D0 % B5 % 3F /
  %D0 % 9A % D1 % 83 % D1 % 80 % D1 %
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
-[6
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
+[7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
  (CourseWork.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `CourseWork.out' has not changed.
-(rerunfilecheck)             Checksum: 710D9004DF63FFCC4FAA02F9F28FACD9;1034.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
+(rerunfilecheck)             Checksum: FF7472918C60C5C6C1581FCBD54D98A8;1337.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 12897 strings out of 480930
- 191385 string characters out of 2914705
- 454715 words of memory out of 3000000
- 28585 multiletter control sequences out of 15000+200000
- 544615 words of font info for 43 fonts, out of 3000000 for 9000
+ 13531 strings out of 480930
+ 198510 string characters out of 2914705
+ 695217 words of memory out of 3000000
+ 29181 multiletter control sequences out of 15000+200000
+ 546867 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,42p,320b,529s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,6n,42p,486b,1115s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
-ti1440.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/d
-pi600\latt1440.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/
-lh-t2a/dpi600\labx2074.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/lj
-four/lh/lh-t2a/dpi600\labx2986.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\fon
-ts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\victo\AppData\Local\MiKTeX
-\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx3583.pk> <C:\Users\victo\AppData\Loca
-l\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\laxc2488.pk> <C:\Users\victo\AppD
-ata\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\vi
-cto\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk>
-Output written on CourseWork.pdf (7 pages, 127278 bytes).
+tt1440.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/d
+pi600\latt1000.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/
+lh-t2a/dpi600\larm0600.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/lj
+four/jknappen/ec/dpi600\tcrm1440.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\f
+onts/pk/ljfour/lh/lh-t2a/dpi600\lati1440.pk> <C:\Users\victo\AppData\Local\MiKT
+eX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\victo\AppData\Lo
+cal\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2986.pk> <C:\Users\victo\Ap
+pData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\
+victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx3583.pk> <C
+:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\laxc248
+8.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600
+\larm1200.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2
+a/dpi600\larm1440.pk>
+Output written on CourseWork.pdf (8 pages, 152902 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 501 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
