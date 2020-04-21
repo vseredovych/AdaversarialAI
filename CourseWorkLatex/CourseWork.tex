@@ -38,12 +38,24 @@
 \geometry{left=35mm,right=15mm,top=20mm,bottom=20mm}
 \geometry{headheight=2ex,headsep=10mm,footskip=10mm}
 
+%
+\usepackage{mathtools}
+\usepackage{amsmath}
+
 %для картинок
 \usepackage{graphicx}
 \usepackage{caption}
 
 % lstlisting settings
 \usepackage{xcolor}
+
+% для часткових похыдних
+\usepackage{physics}
+
+
+% для алгоритмів
+\usepackage[ruled,vlined]{algorithm2e}
+
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -69,6 +81,13 @@
 	tabsize=2
 }
 \lstset{style=mystyle}
+
+
+% custom commands
+\newcommand{\tran}{^{T}}
+\newcommand{\ith}{^{(i)}}
+%\newcommand{\someth}[1]{^{(#1)}}
+
 
 \begin{document}
 	% ======================================================================================== %
@@ -127,7 +146,8 @@
 	
 	% ======================================================================================== %
 	% ============================================ %
-	\chapter{Вступ} 
+	\chapter{Вступ}
+	\textgreater\textbf{TODO}
 	Машинне начання та штучний інтелект активно використовується у різних областях нашого життя, та допомагає у вирішенні таких задач як розпізнавання дорожніх знаків, облич, визначення ризику захворювання та багато іншого.
 	А з поширенням його використання, також збільшуєтья і ризик нападів зловмисників на ці алгоритми, що може привести, до трагічних наслідків. Тому варто досліджувати тему нападів на алгоритми машинного навчання, та знати як захистити свою модель. \par
 	В межах теми цієї роботи будуть розглядатись різні атаки на лінійні моделі машинного начання, та методи їх захисту.
@@ -145,13 +165,74 @@
 	% ============================================ %
 	% ======================================================================================== %
 	
-	
 	% ======================================================================================== %
-	\chapter{Класифікація атак} 
+	% ============================================ %
+	\chapter{Тренування моделі}
+	В якості прикладу лінійного методу машинного навчання, на який будуть сдійснюватись атаки, буде використовуватись модифікований алгоритм логістичної регресії для мультикласової класифікації.
+	
+	\section{Модифікована логістична регресія}
+	Задача прикладу $x \in R^{n_x}$, знайти $\hat{y}=P(y = 1 \mid x), 0 \leq \hat{y} \leq 1$
+	Шукатимемо у вигляді $\hat{y} = \sigma (\omega\tran x + b)$, де
+	\begin{itemize}
+		\item параметри $\omega \in R^{n_x}, b \in R$ - невідомі, потрібно знайти оптимальні для для даної задачі
+		\item $\sigma(z) = \frac{1}{1+ e^{-z}}$ - сигмоїд
+	\end{itemize}
+	Для кожного прикладу з тренувального датасету потрібно обчислити:
+	\begin{itemize}
+		\item $ z\ith = \omega\tran x\ith + b $
+		\item $ y\ith = \sigma\ith (z\ith) $
+	\end{itemize}
+	де $\sigma(z\ith) = \frac{1}{1 + e^{-z\ith}}$, так щоб $\hat{y}\ith \approx y\ith $ \newline
+	Для кожного прикладу визначена функція втрати:
+	$$L(\hat{y}\ith, y\ith) = -y\ith \log(\hat{y}\ith) - (1 - y\ith) \log(1 - \hat{y}\ith)$$
+	На всіх прикладах обчислюємо штрафну функцію як:
+	$$J(w, b) = \frac{1}{m} \sum_{i=1}^{m} L(\hat{y}\ith, y\ith)$$
+	
+	Задача полягає в тому щоб знайти параметри $w \in R^n_x, b\in R$ що мінімізують функцію $J(\omega, b)$
+	Для цього будемо використовувати градієнтний спуск 
+	
+	
 	
 	% ============================================ %
-	\section{Цілеспрямовані атаки} 
-	Основна частина даної роботи полягала у написанні програми. Нижче наводимо основний алгоритм її роботи, на мові C:
+	% ======================================================================================== %
+
+
+	% ======================================================================================== %
+	\chapter{Класифікація атак} 
+	% ============================================ %
+	\section{Метод Швидкого Градієнту} 
+	Першим методом атаки який буде розглядатись є методу швидкого градієнту (Fast Gradient Sign Method).
+	Ідея полягає в тому ..=.
+	
+	\begin{align*}
+		z\ith = \omega\tran x\ith + b \quad
+		\hat{y}\ith = a\ith = \sigma(z\ith) \quad
+		\sigma(z\ith) = \frac{1}{1 + e^{-z\ith}} \quad
+	\end{align*}
+	\begin{align*}
+		L(\hat{y}\ith, y\ith) = -y\ith \log(\hat{y}\ith) - (1 - y\ith) \log(1 - \hat{y}\ith)
+	\end{align*}
+	\begin{align*}
+		da\ith = \pdv{ L(a\ith, y\ith)}{a\ith} = -y\ith \cdot \frac{1}{a\ith} -(1 - y\ith) \cdot \frac{1}{1-a\ith} = -\frac{y\ith}{a\ith} + \frac{1-y\ith}{1-a\ith}
+	\end{align*}
+	\begin{align*}
+		dz\ith &= \pdv{L(a\ith, y\ith)}{a\ith} \cdot \pdv{a\ith}{z\ith} =
+		-\frac{y\ith a\ith (1-a\ith)}{a\ith} + \frac{(1-y\ith) a\ith (1-a\ith)}{1-a\ith} = \\
+		& = -y\ith + a\ith y\ith + a\ith - y\ith a\ith  = a\ith - y\ith
+	\end{align*}
+	%\begin{align*}
+	%	dz\ith &= \pdv{L(a\ith, y\ith)}{w\ith_j} \cdot \pdv{z\ith}{w\ith_j} = x\ith_j dz\ith
+	%\end{align*}
+	%\begin{align*}
+	%	db\ith &= \pdv{L(a\ith, y\ith)}{b\ith_j} \cdot \pdv{z\ith}{b\ith_j} = dz\ith
+	%\end{align*}
+	\begin{align*}
+		dx\ith_j &= \pdv{L(a\ith, y\ith)}{x\ith_j} \cdot \pdv{z\ith}{x\ith_j} = 
+		(w\tran)\ith_j (a\ith - y\ith) = (w\tran)\ith_j dz
+	\end{align*}
+
+
+
 	% ============================================ %
 	
 	% ============================================ %
@@ -172,25 +253,41 @@
 
 	\lstset{language=Python}
 	\begin{lstlisting}
-    def fit(self, X, w, b, y, alpha, max_iters, predict_func):
-# Check that X and y have correct shape
-self.w = w
-self.b = b
-
-self.y_ = np.expand_dims(y.T, axis=1)
-self.X_ = X.T
-
-self.num_iters = 0
-self.X_ = self._gradient_descent(self.X_, self.y_, self.w, self.b, alpha, max_iters, predict_func)
-
-def _cost_function(self, X, Y, A):
-m = X.shape[0]
-if m == 0:
-return None
-
-J = (1 / m) * np.sum(-Y * np.log(A) - (1 - Y) * np.log(1 - A))
-return J
+	def fit(self, X, w, b, y, alpha, max_iters, predict_func):
+		# Check that X and y have correct shape
+		self.w = w
+		self.b = b
+		
+		self.y_ = np.expand_dims(y.T, axis=1)
+		self.X_ = X.T
+		
+		self.num_iters = 0
+		self.X_ = self._gradient_descent(self.X_, self.y_, self.w, self.b, alpha, max_iters, predict_func)
+		
+		def _cost_function(self, X, Y, A):
+		m = X.shape[0]
+		if m == 0:
+		return None
+		
+		J = (1 / m) * np.sum(-Y * np.log(A) - (1 - Y) * np.log(1 - A))
+		return J
 	\end{lstlisting}
+	
+	\begin{algorithm}[H]
+		\SetAlgoLined
+		\KwResult{Write here the result }
+		initialization\;
+		\While{While condition}{
+			instructions\;
+			\eIf{condition}{
+				instructions1\;
+				instructions2\;
+			}{
+				instructions3\;
+			}
+		}
+		\caption{How to write algorithms}
+	\end{algorithm}
 	
 	% ============================================ %
 	

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.16)  20 APR 2020 17:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.16)  21 APR 2020 17:14
 entering extended mode
 **./CourseWork.tex
 (CourseWork.tex
@@ -480,6 +480,99 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@dimlist=\toks21
 
 (D:\Apps\MickTech\tex/latex/geometry\geometry.cfg))
+(D:\Apps\MickTech\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
+
+(D:\Apps\MickTech\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count199
+\calc@Bcount=\count266
+\calc@Adimen=\dimen153
+\calc@Bdimen=\dimen154
+\calc@Askip=\skip50
+\calc@Bskip=\skip51
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count267
+\calc@Cskip=\skip52
+)
+(D:\Apps\MickTech\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+(D:\Apps\MickTech\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip53
+
+For additional information on amsmath, use the `?' option.
+(D:\Apps\MickTech\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(D:\Apps\MickTech\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen155
+))
+(D:\Apps\MickTech\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen156
+)
+(D:\Apps\MickTech\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count268
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count269
+\leftroot@=\count270
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count271
+\DOTSCASE@=\count272
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen157
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count273
+\c@MaxMatrixCols=\count274
+\dotsspace@=\muskip17
+\c@parentequation=\count275
+\dspbrk@lvl=\count276
+\tag@help=\toks23
+\row@=\count277
+\column@=\count278
+\maxfields@=\count279
+\andhelp@=\toks24
+\eqnshift@=\dimen158
+\alignsep@=\dimen159
+\tagshift@=\dimen160
+\tagwidth@=\dimen161
+\totwidth@=\dimen162
+\lineht@=\dimen163
+\@envbody=\toks25
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count280
+\l_MT_multwidth_dim=\dimen164
+\origjot=\skip56
+\l_MT_shortvdotswithinadjustabove_dim=\dimen165
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen166
+\l_MT_above_intertext_sep=\dimen167
+\l_MT_below_intertext_sep=\dimen168
+\l_MT_above_shortintertext_sep=\dimen169
+\l_MT_below_shortintertext_sep=\dimen170
+\xmathstrut@box=\box49
+\xmathstrut@dim=\dimen171
+)
 (D:\Apps\MickTech\tex/latex/graphics\graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -494,8 +587,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
-\Gin@req@height=\dimen153
-\Gin@req@width=\dimen154
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
 )
 (D:\Apps\MickTech\tex/latex/caption\caption.sty
 Package: caption 2020/01/03 v3.4h Customizing captions (AR)
@@ -503,17 +596,17 @@ Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 (D:\Apps\MickTech\tex/latex/caption\caption3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen155
-\captionmargin@=\dimen156
-\captionwidth=\dimen157
-\caption@tempdima=\dimen158
-\caption@indent=\dimen159
-\caption@parindent=\dimen160
-\caption@hangindent=\dimen161
+\captionmargin=\dimen174
+\captionmargin@=\dimen175
+\captionwidth=\dimen176
+\caption@tempdima=\dimen177
+\caption@indent=\dimen178
+\caption@parindent=\dimen179
+\caption@hangindent=\dimen180
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count199
-\c@continuedfloat=\count266
+\c@caption@flags=\count281
+\c@continuedfloat=\count282
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
@@ -535,35 +628,103 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
+(D:\Apps\MickTech\tex/latex/physics\physics.sty
+Package: physics 
+
+(D:\Apps\MickTech\tex/latex/l3packages/xparse\xparse.sty
+(D:\Apps\MickTech\tex/latex/l3kernel\expl3.sty
+Package: expl3 2020-04-06 L3 programming layer (loader) 
+
 (D:\Apps\MickTech\tex/latex/l3backend\l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count267
-\l__pdf_internal_box=\box47
+\l__kernel_color_stack_int=\count283
+\l__pdf_internal_box=\box50
+))
+Package: xparse 2020-03-06 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count284
+\g__xparse_grabber_int=\count285
+\l__xparse_m_args_int=\count286
+\l__xparse_v_nesting_int=\count287
+))
+(D:\Apps\MickTech\tex/latex/algorithm2e\algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count288
+
+(D:\Apps\MickTech\tex/latex/base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip57
+
+(D:\Apps\MickTech\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count289
+)
+(D:\Apps\MickTech\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(D:\Apps\MickTech\tex/latex/relsize\relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip58
+\skiplinenumber=\skip59
+\skiprule=\skip60
+\skiphlne=\skip61
+\skiptext=\skip62
+\skiplength=\skip63
+\algomargin=\skip64
+\skipalgocfslide=\skip65
+\algowidth=\dimen181
+\inoutsize=\dimen182
+\inoutindent=\dimen183
+\interspacetitleruled=\dimen184
+\interspacealgoruled=\dimen185
+\interspacetitleboxruled=\dimen186
+\algocf@ruledwidth=\skip66
+\algocf@inoutbox=\box51
+\algocf@inputbox=\box52
+\AlCapSkip=\skip67
+\AlCapHSkip=\skip68
+\algoskipindent=\skip69
+\algocf@nlbox=\box53
+\algocf@hangingbox=\box54
+\algocf@untilbox=\box55
+\algocf@skipuntil=\skip70
+\algocf@capbox=\box56
+\algocf@lcaptionbox=\skip71
+\algoheightruledefault=\skip72
+\algoheightrule=\skip73
+\algotitleheightruledefault=\skip74
+\algotitleheightrule=\skip75
+\c@algocfline=\count290
+\c@algocfproc=\count291
+\c@algocf=\count292
+\algocf@algoframe=\box57
+\algocf@algobox=\box58
 ) (CourseWork.aux)
 \openout1 = `CourseWork.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-\AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring OFF on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+\AtBeginShipoutBox=\box59
+Package hyperref Info: Link coloring OFF on input line 92.
 
 (D:\Apps\MickTech\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -574,11 +735,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (D:\Apps\MickTech\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count268
+\c@section@level=\count293
 )
-LaTeX Info: Redefining \ref on input line 73.
-LaTeX Info: Redefining \pageref on input line 73.
-LaTeX Info: Redefining \nameref on input line 73.
+LaTeX Info: Redefining \ref on input line 92.
+LaTeX Info: Redefining \pageref on input line 92.
+LaTeX Info: Redefining \nameref on input line 92.
 
 (CourseWork.out) (CourseWork.out)
 \@outlinefile=\write3
@@ -587,23 +748,23 @@ LaTeX Info: Redefining \nameref on input line 73.
 
 (D:\Apps\MickTech\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count269
-\scratchdimen=\dimen162
-\scratchbox=\box49
-\nofMPsegments=\count270
-\nofMParguments=\count271
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count272
-\MPscratchDim=\dimen163
-\MPnumerator=\count273
-\makeMPintoPDFobject=\count274
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count294
+\scratchdimen=\dimen187
+\scratchbox=\box60
+\nofMPsegments=\count295
+\nofMParguments=\count296
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen188
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
+\everyMPtoPDFconversion=\toks28
 ) (D:\Apps\MickTech\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-\c@lstlisting=\count275
+\c@lstlisting=\count300
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -644,10 +805,7 @@ Package caption Info: End \AtBeginDocument code.
 [2
 
 {C:/Users/victo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(CourseWork.toc
-LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <7> on input line 3.
-)
+(CourseWork.toc)
 \tf@toc=\write4
 \openout4 = `CourseWork.toc'.
 
@@ -659,61 +817,65 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.150 	\chapter
-               {Класифікація атак} [2
+l.170 	\chapter
+               {Тренування моделі} [2
 
 ]
 {\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 2.
-(D:\Apps\MickTech\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-163.
-
-(D:\Apps\MickTech\tex/latex/cyrillic\t2acmtt.fd
-File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-) [3
+[3
 
 ] [4]
 {\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 3.
-[5
+(D:\Apps\MickTech\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) [5
 
 ]
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
+244.
+
+(D:\Apps\MickTech\tex/latex/cyrillic\t2acmtt.fd
+File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+) [6] [7]
 {\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 4.
-[6
+[8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+{\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 5.
+[9
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 313--315
 \T2A/cmtt/m/n/14.4 wiki / %D0 % AF % D0 % BA _ %D0 % B2 % D1 % 87 % D0 % B8 % D
 1 % 82 % D0 % B8 % D1 % 81 % D1 %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+Underfull \hbox (badness 10000) in paragraph at lines 313--315
 \T2A/cmtt/m/n/14.4 8C _ %D0 % BA % D1 % 80 % D0 % B0 % D1 % 89 % D0 % B5 % 3F /
  %D0 % 9A % D1 % 83 % D1 % 80 % D1 %
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
-[7
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
+[10
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
  (CourseWork.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
 Package rerunfilecheck Info: File `CourseWork.out' has not changed.
-(rerunfilecheck)             Checksum: FF7472918C60C5C6C1581FCBD54D98A8;1337.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
+(rerunfilecheck)             Checksum: 74305EF501A3187798CA29811F13B9BD;1859.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
  ) 
 Here is how much of TeX's memory you used:
- 13531 strings out of 480930
- 198510 string characters out of 2914705
- 695217 words of memory out of 3000000
- 29181 multiletter control sequences out of 15000+200000
+ 16654 strings out of 480930
+ 247517 string characters out of 2914705
+ 810251 words of memory out of 3000000
+ 32245 multiletter control sequences out of 15000+200000
  546867 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,42p,486b,1115s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,42p,486b,837s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
 tt1440.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/d
 pi600\latt1000.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/
@@ -727,10 +889,17 @@ victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx3583.pk> <C
 :\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\laxc248
 8.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600
 \larm1200.pk> <C:\Users\victo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2
-a/dpi600\larm1440.pk>
-Output written on CourseWork.pdf (8 pages, 152902 bytes).
+a/dpi600\larm1440.pk><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmex10.pf
+b><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Apps/MickTech
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Apps/MickTech/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Apps/MickTech
+/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Apps/MickTech/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b>
+Output written on CourseWork.pdf (11 pages, 262843 bytes).
 PDF statistics:
- 501 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 619 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
