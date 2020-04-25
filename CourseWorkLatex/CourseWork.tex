@@ -163,7 +163,30 @@
 	\item Визначення методів захисту
 	\end{itemize}
 	% ============================================ %
+	
+	% ============================================ %
+	\section{Класифікація атак}
+	
+	блаблабла \newline
+	\textbf{Атаки на закриту модель (White Box attacks)} - описує такий сценарій коли в нападника  
+	є повний доступ до параметрів і градієнтів моделі.  
+	\newline
+	\newline
+	\textbf{Атаки на відкриту модель (Black Box attacks)} - це атаки при яких в нападника нема доступу до параметрів моделі. 
+	\newline
+	\newline
+	\textbf{Цілеспрямовані атаки (Targeted Attacks)} - такі атаки, метою яких є внести у вхідний приклад такі зміни щоб модель передбачила якийсь конкретний клас.
+	\newline
+	\newline	
+	\textbf{Нецілеспрямовані атаки (Untargeted Attacks)} - нецілеспрямованими атаками є атаки метою яких є внести в приклад такі зміни, щоб модель передбачила клас відміний від правильного, незалежно від того яким він буде.
+	\newline
+	\newline
+	
+
+	% ============================================ %
+
 	% ======================================================================================== %
+	
 	
 	% ======================================================================================== %
 	% ============================================ %
@@ -198,41 +221,105 @@
 
 
 	% ======================================================================================== %
-	\chapter{Класифікація атак} 
+	\chapter{Методи атак} 
 	% ============================================ %
 	\section{Метод Швидкого Градієнту} 
 	Першим методом атаки який буде розглядатись є методу швидкого градієнту (Fast Gradient Sign Method).
+	
+	Однокроковий метод градыэнтного стуску, FGSM, щоб знайти такий adversarial приклад $x^{*}$ який максимызую функцію втрати $J(x^{*}, y)$, де J є функцією кросс-ентропії.
+	
+	$ X^{*} = X + \epsilon \cdot sign(\Delta_x J(x, y))$, 
+	
+	де $\Delta_x J(x, y)$
+	
+	
 	Ідея полягає в тому ..=.
 	
 	\begin{align*}
-		z\ith = \omega\tran x\ith + b \quad
-		\hat{y}\ith = a\ith = \sigma(z\ith) \quad
-		\sigma(z\ith) = \frac{1}{1 + e^{-z\ith}} \quad
+		z_i = \omega\tran x\ith + b \quad
+		\hat{y}_i = a_i = softmax(z_i) \quad
+		softmax(z_i) = \frac{e^{z_i}}{\sum_{k=1}^{c} e_k^z} \quad
 	\end{align*}
+	\textbf{Похідна softmax функції} \newline
+	Якщо $i = j$,
 	\begin{align*}
-		L(\hat{y}\ith, y\ith) = -y\ith \log(\hat{y}\ith) - (1 - y\ith) \log(1 - \hat{y}\ith)
+	    \pdv{\hat{y_i}}{z_j} 
+	    &=
+	    \pdv{\frac{e^{z_i}}{\sum_{k=1}^{c} e_k^z}}{z_j} 
+	    =
+	    \frac{e^{z_i} \sum_{k=1}^{c} e^{z_k} - e^{z_j} e^{z_i}}{(\sum_{k=1}^{c}  e^{z_k})^2} 
+	    = \\
+	    & =
+	    \frac{e^{z_j}}{\sum_{k=1}^{c}  e^{z_k}} \times \frac{(\sum_{k=1}^{c} e^{z_k} - e^{z_j})}{\sum_{k=1}^{c}  e^{z_k}} 
+	    = 
+	    y_i(1-y_j)
 	\end{align*}
+	Якщо $i \neq j$,
 	\begin{align*}
-		da\ith = \pdv{ L(a\ith, y\ith)}{a\ith} = -y\ith \cdot \frac{1}{a\ith} -(1 - y\ith) \cdot \frac{1}{1-a\ith} = -\frac{y\ith}{a\ith} + \frac{1-y\ith}{1-a\ith}
+		\pdv{\hat{y_i}}{z_j}
+		&=
+		\pdv{\frac{e^{z_i}}{\sum_{k=1}^{c} e_k^z}}{z_j} 
+		=
+		\frac{0 - e^{z_j} e^{z_i}}{\sum_{k=1}^{c}  e^{z_k}} \times \frac{e^{z_i}}{\sum_{k=1}^{c} e^{z_k}} 
+		= 
+		-y_i y_j 
 	\end{align*}
+	
+	\textbf{Функція кросс-ентропії}
 	\begin{align*}
-		dz\ith &= \pdv{L(a\ith, y\ith)}{a\ith} \cdot \pdv{a\ith}{z\ith} =
-		-\frac{y\ith a\ith (1-a\ith)}{a\ith} + \frac{(1-y\ith) a\ith (1-a\ith)}{1-a\ith} = \\
-		& = -y\ith + a\ith y\ith + a\ith - y\ith a\ith  = a\ith - y\ith
+		\xi(y, x) = - \sum_{i=1}^{c} y_i  \log (\hat{y_i})
 	\end{align*}
-	%\begin{align*}
-	%	dz\ith &= \pdv{L(a\ith, y\ith)}{w\ith_j} \cdot \pdv{z\ith}{w\ith_j} = x\ith_j dz\ith
-	%\end{align*}
-	%\begin{align*}
-	%	db\ith &= \pdv{L(a\ith, y\ith)}{b\ith_j} \cdot \pdv{z\ith}{b\ith_j} = dz\ith
-	%\end{align*}
+	
+	\textbf{Функція кросс-ентропії}
 	\begin{align*}
-		dx\ith_j &= \pdv{L(a\ith, y\ith)}{x\ith_j} \cdot \pdv{z\ith}{x\ith_j} = 
-		(w\tran)\ith_j (a\ith - y\ith) = (w\tran)\ith_j dz
+		\pdv{\xi}{z_i} 
+		&= 
+		- \sum_{j=1}^{c} \pdv{ y_j \log (\hat{y_j})}{z_i} 
+		=
+		- \sum_{j=1}^{c} y_j \pdv{ \log (\hat{y_j})}{z_i} 
+		= \\&
+		- \sum_{j=1}^{c} y_j \frac{1}{\hat{y_i}} \cdot \pdv{\hat{y_i}}{z_i} = 
+		- \frac{y_i}{\hat{y_i}} \pdv{\hat{y_i}}{z_i} - \sum_{j \neq i} \frac{y_j}{\hat{y_j}} \pdv{\hat{y_j}}{z_i} 
+		= \\& =
+		-\frac{y_i}{\hat{y_i}} \hat{y_i} (1 - \hat{y_i}) - \sum_{j \neq i} \frac{y_j}{\hat{y_j}} (-\hat{y_i} \hat{y_j}) 
+		=
+		-y_i + y_i \hat{y_i} + \sum_{j \neq i} y_j \hat{y_i}
+		= \\& =
+		-y_i + \sum_{j=1}^{c} y_j \hat{y_i} 
+		=
+		\hat{y_i} - y_i
 	\end{align*}
-
-
-
+	, i = 1, ..., C
+	
+	\textbf{Обчислення урадієнту "має бути вище"}
+	\begin{align*}
+		\pdv{\xi}{x_i} 
+		&=
+		\pdv{\xi}{z_i} \pdv{z_i}{x_i} 
+		=
+		(\hat{y_i} - y_i) \pdv{(\omega\tran x_i+ b)}{x_i} 
+		=
+		(\hat{y_i} - y_i) x_i 
+		=
+		dz \cdot x
+	\end{align*}
+	
+	\textbf{Обчислення урадієнту "має бути вище"}
+	
+	\begin{algorithm}[H]		
+		\SetAlgoLined
+		\KwIn{Приклад $x$, значення цілі y, класифікатор $f$.}
+		\KwOut{ Adversarial $x^{*}$. } 
+		
+		Ініціалізація $x^{*} \leftarrow x. $
+		
+		\KwResult{Write here the result }
+		initialization\;
+		\While{$\hat{k}(x_i) = \hat{k}(x^{*})$}{
+			$x^{*} = x^{*} - \alpha \cdot sign(\Delta_x J(x, y))$
+		}
+		\caption{I-FGSM атака}
+	\end{algorithm}
 	% ============================================ %
 	
 	% ============================================ %
