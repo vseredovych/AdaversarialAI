@@ -1,14 +1,12 @@
 % -*- mode: LaTeX; coding: utf8; -*-
 
-\documentclass[a4paper,14pt]{extreport}
+\documentclass[a4paper,12pt]{extreport}
 
 % правильне кодування
-\usepackage[utf8]{inputenc}
 \usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage[ukrainian]{babel}
 
-%almost times new roaman
-\usepackage{mathptmx}
 
 % починати абзаци невеликим відступом першого рядка
 \usepackage{indentfirst}
@@ -45,7 +43,7 @@
 
 %
 \usepackage{mathtools}
-\usepackage{amsmath}
+\usepackage{mathrsfs, amsmath}
 
 %для картинок
 \usepackage{graphicx}
@@ -54,7 +52,7 @@
 % lstlisting settings
 \usepackage{xcolor}
 
-% для часткових похыдних
+% для часткових похідних
 \usepackage{physics}
 
 
@@ -92,12 +90,18 @@
 }
 \lstset{style=mystyle}
 
+% bibliography
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=ynt
+]{biblatex}
+\addbibresource{resources/bibres.bib}
 
 % custom commands
 \newcommand{\tran}{^{T}}
 \newcommand{\ith}{^{(i)}}
 %\newcommand{\someth}[1]{^{(#1)}}
-
 
 
 \begin{document}
@@ -152,58 +156,92 @@
 	% ============================================ %
 	\tableofcontents
 	\newpage
-	% ============================================ %
-	
-	
-	% ============================================ %
-	\chapter[14pt]{Вступ}
-	\textgreater\textbf{TODO}
-	Машинне начання та штучний інтелект активно використовується у різних областях нашого життя, та допомагає у вирішенні таких задач як розпізнавання дорожніх знаків, облич, визначення ризику захворювання та багато іншого.
-	А з поширенням його використання, також збільшуєтья і ризик нападів зловмисників на ці алгоритми, що може привести, до трагічних наслідків. Тому варто досліджувати тему нападів на алгоритми машинного навчання, та знати як захистити свою модель. \par
-	В межах теми цієї роботи будуть розглядатись різні атаки на лінійні моделі машинного начання, та методи їх захисту.
 
+	% ============================================ %
+	
+	
+	% ============================================ %
+	\chapter{Вступ}
+	Алгоритми машинного навчання активно використовується у різних областях нашого життя та дуже добре демонструють себе у задачах класифікації. Однак, виявляється, що ці алгоритми класифікації є досить вразливими навіть до незначних, правильно вибраних, пертурбацій вхідної інформації. Такі модифіковані приклади, які навмисно змінють для того щоб вони були хибно передбаченні називають змагальними прикладами або adversarial samples. В деяких випадках ці зміни можуть бути настільки малі, що для людини вони зовсім не будуть помітні, однак для класифікатор моделі буде робити хибне передбачення. Така вразливість може бути дуже небузпечною, коли алгоритми машинного навчання застосовуються в критичних для здоров'я людини середовищах. Саме тому ця область привертає до себе багато уваги і порбеюує досліджень. 
+	
+	В межах теми цієї роботи будуть розглядатись різні методи атак на лінійні моделі машинного начання які будуть аналізуватись і порівнюватись між собою. Також будуть запропоновані методи захисту моделі від моделей.
 	
 	\section{Постановка задачі} 
 	
 	\textit{Мета} даної роботи полягає у тому, щоб дослідити ефективність атак на лінійні моделі машинного навчання, та визначити методи захисту від них. \par
 	Виходячи з мети, визначені завдання роботи:
 	\begin{itemize}
-	\item Практична реалізація та дослідження методів атак
-	\item Визначення методів захисту
+	\item Реалізувати лінійну модель машинного навчання
+	\item Дослідити різні методи генерування змагальних прикладів
+	\item Проаналізувати ефективнівсть атак
+	\item Визначити методів захисту
 	\end{itemize}
 
 	
-	\section{Класифікація атак}
-		
-	Нехай існує класифікатор $f(x):x\rightarrow y$, де  $x \in X, y \in Y$, який передбачає значення $y$ для вхідного $x$. Метою змагального прикладу є знайти такий $x^{*}$, який знаходиться в околі $x$, але хибно класифікується класифікатором. Зазвичай максимальний рівень шуму який може бути в змагальному прикладі може бути не більше за певну $L_p$ норму $ \| x^{*} - x \|_p < \epsilon $, де $p=1,2,\infty $.
-	\newline \par
-	\textbf{Нецілеспрямовані атаки (Untargeted Attacks)} \newline Нецілеспрямованими атаками є атаки метою яких є внести в приклад $x$, який правильно передбачається як $f(x) = y$ незначний шум так, щоб класифікатор зробив хибне передбачення $f(x^{*}) \neq y$.
-	\newline \par
-	\textbf{Цілеспрямовані атаки (Targeted Attacks)} \newline
-	Цілеспрямованими атаками називають такі атаки, метою яких є внести у вхідний приклад $x$ такі пертурбації щоб класифікатор передбачив якийсь конкретний клас $f(x^{*}) = y^{*}$, де $y^{*}$ є заданою ціллю $y^{*} \neq y$.
-	\newline \par
-	\textbf{Атаки на закриту модель (White Box attacks)} - описує такий сценарій коли в нападника є повний доступ до параметрів і градієнтів моделі.  
-	\newline \par
-	\textbf{Атаки на відкриту модель (Black Box attacks)} - це атаки при яких в нападника нема доступу до параметрів моделі. 
+	\section{Основні поняття}
+	
+	В цій секції будуть розглянуті основні поняття, які будуть використовуватись в ході роботи. 
+	
+	\textbf{Змагальний приклад (Adversarial sample)}
+	\newline
+	Нехай існує класифікатор $f(x):x\rightarrow y$, де  $x \in X, y \in Y$, який передбачає значення $y$ для вхідного $x$. Метою змагального прикладу є знайти такий $x^{*}$, який знаходиться в околі $x$, але хибно визначається класифікатором. Зазвичай максимальний рівень шуму який може бути в змагальному прикладі може бути не більше за певну $L_p$ норму $ \| x^{*} - x \|_p < \epsilon $, де $p=1,2,\infty $. В межах даної роботи для визначення рівня пертурбації буде виористовуватись саме $L_{\infty}$ норма.
+	\par
+	\textbf{Націлені атаки (Untargeted Attacks)} \newline
+	Націлені атаками є атаки метою яких є внести в приклад $x$, який правильно передбачається як $f(x) = y$ незначний шум так, щоб класифікатор зробив хибне передбачення $f(x^{*}) \neq y$.
+	\par
+	\textbf{Ненацілені атаки (Targeted Attacks)} \newline
+	Ненацілені атаками називають такі атаки, метою яких є внести у вхідний приклад $x$ такі пертурбації щоб класифікатор передбачив якийсь конкретний клас $f(x^{*}) = y^{*}$, де $y^{*}$ є заданою ціллю $y^{*} \neq y$.
+	\par
+	\textbf{Атаки на закриту модель (White Box attacks)} \newline
+	Атаки на закриту модель описують такий сценарій, коли в нападника є повний доступ до параметрів і градієнтів моделі.
+	\par
+	\textbf{Атаки на відкриту модель (Black Box attacks)} \newline
+	До атак на відкриту модель выдносять атаки, при яких в нападника нема доступу до параметрів моделі. 
 	% ============================================ %
 
 	% ============================================ %
 	\chapter{Модель і датасет}
 	
 	\section{Мультикласова логістична регресія}
+	\label{sec:lg}
 	В якості лінійного методу машинного навчання, на котрий будуть сдійснюватись атаки буде використовуватись модифікований алгоритм логістичної регресії для мультикласової класифікації. \par
 	Нехай маємо набір тренувальних даних:
 	\begin{equation*}
 		(x^{(1)}, y^{(1)}), \quad (x^{(2)}, y^{(2)}), \quad ... \quad ,(x^{(m)}, y^{(m)})
 	\end{equation*}
 	\begin{equation*}
+		\quad
+		%%%
+		X =	
+		\begin{bmatrix}
+		\vdots  & \vdots  & & \vdots \\
+		x^{(1)} & x^{(2)} &   \dots & x^{(m)}\\
+		\vdots  & \vdots  & & \vdots
+		\end{bmatrix}
+		%%%
+		\quad
+		%%%
 		x \in
 		\begin{bmatrix}
 		x_1   \\
 		\dots \\
 		x_n
-		\end{bmatrix}	
-		\quad \quad \quad
+		\end{bmatrix}
+		\hspace{21 mm}
+		%%%
+	\end{equation*}
+	\begin{equation*}
+		\quad
+		%%%
+		Y =	
+		\begin{bmatrix}
+		\vdots  & \vdots  & & \vdots \\
+		y^{(1)} & y^{(2)} &   \dots & y^{(m)}\\
+		\vdots  & \vdots  & & \vdots
+		\end{bmatrix}
+		%%%
+		\quad
+		%%%
 		y \in
 		\begin{bmatrix}
 		y_1   \\
@@ -212,24 +250,10 @@
 		\end{bmatrix}
 		\quad
 		y_1, ..., y_C
-	\end{equation*}
-	\begin{equation*}
-		X =	
-		\begin{bmatrix}
-		\vdots  & \vdots  & & \vdots \\
-		x^{(1)} & x^{(2)} &   \dots & x^{(m)}\\
-		\vdots  & \vdots  & & \vdots
-		\end{bmatrix}
-		\quad \quad \quad
-		Y =	
-		\begin{bmatrix}
-		\vdots  & \vdots  & & \vdots \\
-		y^{(1)} & y^{(2)} &   \dots & y^{(m)}\\
-		\vdots  & \vdots  & & \vdots
-		\end{bmatrix}
+		%%%
 	\end{equation*}
 	\newline
-	$X$ - матриця в якої кожен стовпець є набором характеристик $i-$ого прикладу, $i=1,\dots,m$ 
+	$X$ - матриця в якої кожен стовпець є набором характеристик $i-$ого прикладу, \newline $i=1,\dots,m$ 
 	\newline
 	$Y$ - матриця класів в якої кожен стовпець це масив розмірності $C$, з одиницею на місті справжнього класу
 	\newline
@@ -245,58 +269,93 @@
 	$\hat{y} = softmax(\omega\tran x + b)$, \quad де $\omega \in R^{n}, b \in R$ - невідомі параметри
 	\end{center}
 	Функція активації матиме вигляд:
-	\begin{equation}
-		softmax(z) = \frac{e^{z}}{\sum_{k=1}^{c} e_k^z}
+	\begin{equation}	
+		softmax(z) = \frac{e^{z}}{\sum_{k=1}^{C} e_k^z}
 	\end{equation}
 	Для кожного прикладу з тренувального датасету потрібно обчислити:
-	\begin{center}
-	$ z\ith = \omega\tran x\ith + b $, \quad де	$y\ith = softmax(z_i) = \frac{e^{z_i}}{\sum_{k=1}^{c} e_k^z}$, так щоб $\hat{y}\ith \approx y\ith $
-	\end{center}
+	\begin{equation*}
+	z\ith = \omega\tran x\ith + b, \; \textup{де} \; y\ith = softmax(z_i) = \frac{e^{z_i}}{\sum_{k=1}^{C} e_k^z}, \; \textup{так щоб} \; \hat{y}\ith \approx y\ith
+	\end{equation*}
 	В якості функції втрати буде використовуватись функція кросс-ентропії:
 	\begin{equation}
-		\xi(y, x) = - \sum_{i=1}^{c} y_i  \log (\hat{y_i})
+		\label{eq:cross-entropy}
+		\xi(y, x) = - \sum_{i=1}^{C} y_i  \log (\hat{y_i})
 	\end{equation}
-	Задача полягає в тому щоб знайти параметри $w \in R^n_x, b\in R$ що мінімізують функцію $J(\omega, b)$
-	Для цього будемо використовувати алгоритм градієнтного спуску
+	Задача полягає в тому щоб знайти параметри $w \in R^n_x, b\in R$ що мінімізують \newline функцію $J(\omega, b)$.
+	Для цього будемо використовувати алгоритм градієнтного спуску.
 	
 	\section{Датасет}
-	Для аналізу атак на лінійні методи машинного навчання буде використовуватись MNIST база даних яка складаэться з рукописних цифр. На її основі буде здійснюватись тренування моделі та аналіз атак.
+	Для аналізу атак на лінійні методи машинного навчання буде використовуватись MNIST база даних яка складаэться з 60тис. тренувальних зображень та 10 тис. тестувальних рукописних цифр.
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4 \textwidth]{resources/minist_dataset.jpg}
+		\caption{MNIST датасет рукописних цифр}
+		\label{fig:minist_dataset}
+	\end{figure}
+	На її основі буде здійснюватись тренування моделі та аналіз атак.
+	
+	\section{Тренування моделі}
 	% ============================================ %
 	
 	% ============================================ %
-	\chapter{Методи атак} 
-
-	\section{Атака Шумом}
-
-	\section{Fast Gradient Sign методи}
-	Першим методом атаки який буде розглядатись є методу швидкого градієнту (Fast Gradient Sign Method).
-
-	\subsection{FGSM}
-	Першим методом атаки який буде розглядатись є методу швидкого градієнту (Fast Gradient Sign Method).
+	\chapter{Методи атак}
+	В цьому розділі будуть розглянуті деякі методи генерування змагальних зразків, які були реалізовані і протестовані на лінійній моделі натренованій в розділі \ref{sec:lg}.
 	
-	Ідея цього методу полягає в тому, щоб знайти такий adversarial приклад $x^{*}$ який максимізую функцію втрати $J(x^{*}, y)$, де J є функцією кросс-ентропії.
-	$$ X^{*} = X + \epsilon \cdot sign(\Delta_x J(x, y))$$
-	$$\quad \Delta_x J(x, y)$$	
+	Далі, під час опису будуть використовуватись такі позначення:
+	\begin{itemize}
+		\item $\boldsymbol{X}$ - це зображення, зазвичай це 3-D тензор (ширина $\times$ висота $\times$ глибина). В нашому випадку має розміри $(28 \times 28 \times 1)$ пікселей, яке складаеться з додатніх цілих чисел в межах $[0, 255]$.
+		\item $\boldsymbol{X}^{*}$ - згенерований змагальний приклад для зображення $\boldsymbol{X}$
+		\item $y_{true}$ - привильний клас для зображення $\boldsymbol{X}$.
+		\item $J(\boldsymbol{X}, y)$ - штрафна функція моделі. Ваги моделі $\omega$ навмисно не будемо вказувати, вважатимемо їх сталими, як значення які будуть отримані з моделі машинного навчання. В нашому випадку штрафною функцією є функція кросс-ентропії \ref{eq:cross-entropy}. 
+		\item $Clip_{\boldsymbol{X}, \epsilon} \{ \boldsymbol{X}^{*} \}$ - функція яка виконує по-піксельне обрізання зображення $X^{*}$ так, щоб результат був в $L_{\infty}$ $\epsilon$ - околі вхідного зображення $\boldsymbol{X}$. Рівняння для цього виглядає наступним чином:
+		
+		\begingroup
+		\setlength{\abovedisplayskip}{0pt}
+		\setlength{\belowdisplayskip}{0pt}
+		\begin{align}
+		\resizebox{.9 \textwidth}{!} 
+		{
+			$
+			Clip_{X, \epsilon} \{ \boldsymbol{X}^{*} \}(x, y, z) = 
+			min\Big\{ 255, \boldsymbol{X}(x, y, z) + \epsilon, max \{ 0, \boldsymbol{X}(x, y, z) - \epsilon, \boldsymbol{X}^{*}(x, y, z) \} \Big\}
+			$,
+		}
+		\end{align}
+		\endgroup
+
+		де $\boldsymbol{X}(x, y, z)$ - це значення каналу $z$ зображення $\boldsymbol{X}$ з координатами $(x, y)$.
+	\end{itemize}
+
 	
-	\textbf{Обчислення градієнту}
-	\newline
-	Для методу логістичної регресії необхідно обчислити градієнт від функції кросс-ентропії(посилання).
-	%$$z_i = \omega\tran x\ith + b \hat{y}_i = a_i = softmax(z_i)$$
+	
+	\section{Атака шумом}
+	Найпершим і одним з найпростіших методів атак є \textit{атака шумом}. Цей тип атак можна характеризувати як \textit{ненацілену атаку на закриту модель}. 
+	
+	Основна ідея полягає в тому щоб згенерувати приклад який складається з випадково згенерованих значень і додати його до зображення на якому буде здійснюватись класифікація. В випадку нашої моделі шумом буде деяке $\hat{r}$ розміром $784 \times 1$, зі значеннями в межах $[0, 255]$. При цьому $\hat{r}$ має задаватись так, щоб задовільняти деяку задану норму $ \| \hat{r} \|_2 < \epsilon$
+
+	\section{FGSM}
+	Одним з найпошириніших методів для генерування змагальних зразків машинного навчання є Fast Gradient Sign Method. В перше він був представлений в роботі \cite{goodfellow2014explaining}. Ідея цього методу полягає в тому, щоб знайти такий adversarial приклад $x^{*}$ який максимізую функцію втрати $J(x^{*}, y)$ до певного $L_{\infty}$ обмеження. Цього можна досягти один раз використавши використавши зворотне поширення:
+	\begin{equation}
+	X^{*} = X + \epsilon \cdot sign(\Delta_x J(x, y)),
+	\end{equation}
+	де $\epsilon$ - деякий гіперпараметер.
+	
+	Для того щоб застосувати цей метод для логістичної регресії необхідно обчислити градієнт від функції кросс-ентропії \ref{eq:cross-entropy}. Для цього спочатку знайдемо похідну від $softmax$ функції:
 	\begin{align*}
-		z_i = \omega\tran x\ith + b \quad
-		\hat{y}_i = a_i = softmax(z_i) \quad
-		softmax(z_i) = \frac{e^{z_i}}{\sum_{k=1}^{c} e_k^z} \quad
+		z_i = \omega\tran x\ith + b; \quad
+		\hat{y}_i = a_i = softmax(z_i); \quad
+		softmax(z_i) = \frac{e^{z_i}}{\sum_{k=1}^{C} e_k^z}; \quad
 	\end{align*}
-	\textbf{Похідна softmax функції} \newline
 	Якщо $i = j$,
 	\begin{align*}
 	    \pdv{\hat{y_i}}{z_j} 
 	    &=
-	    \pdv{\frac{e^{z_i}}{\sum_{k=1}^{c} e_k^z}}{z_j} 
+	    \pdv{\frac{e^{z_i}}{\sum_{k=1}^{C} e_k^z}}{z_j} 
 	    =
-	    \frac{e^{z_i} \sum_{k=1}^{c} e^{z_k} - e^{z_j} e^{z_i}}{(\sum_{k=1}^{c}  e^{z_k})^2} 
+	    \frac{e^{z_i} \sum_{k=1}^{C} e^{z_k} - e^{z_j} e^{z_i}}{(\sum_{k=1}^{C}  e^{z_k})^2} 
 	    = \\& =
-	    \frac{e^{z_j}}{\sum_{k=1}^{c}  e^{z_k}} \times \frac{(\sum_{k=1}^{c} e^{z_k} - e^{z_j})}{\sum_{k=1}^{c}  e^{z_k}} 
+	    \frac{e^{z_j}}{\sum_{k=1}^{C}  e^{z_k}} \times \frac{(\sum_{k=1}^{C} e^{z_k} - e^{z_j})}{\sum_{k=1}^{C}  e^{z_k}} 
 	    = 
 	    y_i(1-y_j)
 	\end{align*}
@@ -304,27 +363,30 @@
 	\begin{align*}
 		\pdv{\hat{y_i}}{z_j}
 		&=
-		\pdv{\frac{e^{z_i}}{\sum_{k=1}^{c} e_k^z}}{z_j} 
+		\pdv{\frac{e^{z_i}}{\sum_{k=1}^{C} e_k^z}}{z_j} 
 		=
-		\frac{0 - e^{z_j} e^{z_i}}{\sum_{k=1}^{c}  e^{z_k}} \times \frac{e^{z_i}}{\sum_{k=1}^{c} e^{z_k}} 
+		\frac{0 - e^{z_j} e^{z_i}}{\sum_{k=1}^{C}  e^{z_k}} \times \frac{e^{z_i}}{\sum_{k=1}^{C} e^{z_k}} 
 		= 
 		-y_i y_j 
 	\end{align*}
 	
-	\textbf{Функція кросс-ентропії}
-	\begin{align*}
-		\xi(y, x) = - \sum_{i=1}^{c} y_i  \log (\hat{y_i})
-	\end{align*}
+	\begingroup
+	\setlength{\abovedisplayskip}{0pt}
+	\setlength{\belowdisplayskip}{0pt}
 	
-	\textbf{Функція кросс-ентропії}
+	Далі обчислюємо похідну від функції кросс-ентропії:
+	\begin{align*}
+		\xi(y, x) = - \sum_{i=1}^{C} y_i  \log (\hat{y_i})
+	\end{align*}
+
 	\begin{align*}
 		\pdv{\xi}{z_i} 
 		&= 
-		- \sum_{j=1}^{c} \pdv{ y_j \log (\hat{y_j})}{z_i} 
+		- \sum_{j=1}^{C} \pdv{ y_j \log (\hat{y_j})}{z_i} 
 		=
-		- \sum_{j=1}^{c} y_j \pdv{ \log (\hat{y_j})}{z_i} 
+		- \sum_{j=1}^{C} y_j \pdv{ \log (\hat{y_j})}{z_i} 
 		= 
-		- \sum_{j=1}^{c} y_j \frac{1}{\hat{y_i}} \cdot \pdv{\hat{y_i}}{z_i} 
+		- \sum_{j=1}^{C} y_j \frac{1}{\hat{y_i}} \cdot \pdv{\hat{y_i}}{z_i} 
 		= \\& =
 		- \frac{y_i}{\hat{y_i}} \pdv{\hat{y_i}}{z_i} - \sum_{j \neq i} \frac{y_j}{\hat{y_j}} \pdv{\hat{y_j}}{z_i} 
 		= 
@@ -332,13 +394,14 @@
 		= \\& =
 		-y_i + y_i \hat{y_i} + \sum_{j \neq i} y_j \hat{y_i}
 		= 
-		-y_i + \sum_{j=1}^{c} y_j \hat{y_i} 
+		-y_i + \sum_{j=1}^{C} y_j \hat{y_i} 
 		=
-		\hat{y_i} - y_i
+		\hat{y_i} - y_i ,
 	\end{align*}
-	, i = 1, ..., C
-	
-	\textbf{Обчислення урадієнту "має бути вище"}
+	\endgroup
+	де i = 1, ..., C
+	\newline	
+	Тепер можна обчислити градієнт від штрафної функції по $x$:
 	\begin{align*}
 		\pdv{\xi}{x_i} 
 		&=
@@ -346,48 +409,72 @@
 		=
 		(\hat{y_i} - y_i) \pdv{(\omega\tran x_i+ b)}{x_i} 
 		=
-		(\hat{y_i} - y_i) x_i 
+		(\hat{y_i} - y_i) \omega\tran 
 		=
-		dz \cdot x
+		dz \cdot \omega\tran
 	\end{align*}
-	
-	\textbf{Обчислення урадієнту "має бути вище"}
-	
-	%\begin{algorithmic}[1]	
-	%	\While{Termination condition not reached}
-	%	\If {$N$ is even}
-	%	\State $X \Leftarrow X \times X$
-	%	\State $N \Leftarrow N / 2$
-	%	\Else {$N$ is odd}
-	%	\State $y \Leftarrow y \times X$
-	%	\State $N \Leftarrow N - 1$
-	%	\EndIf
-	%	\State return ...
-	%	\EndWhile
-	%\end{algorithmic}
-
-	\subsection{T-FGSM}
-
-	\subsection{I-FGSM}
-		\begin{algorithm}
-			\caption{$I-FGSM$}
-			\begin{algorithmic}[1]
-				\State \algorithmicrequire{Приклад $x$, значення цілі y, класифікатор $f$}
-				\State \algorithmicrequire{значення пертурбації $\epsilon$, значення цілі y, кількість ітерації $T$.}
-				\State \algorithmicensure{ Adversarial $x^{*}$ з нормою $\|x^{*} - x\|_{inf} \leq \epsilon $;}
-				\State $a = \epsilon / T $;
-				\State $x^{*} = x$;
-				\For{$t=0 \quad to \quad T-1$}
-				\State $x^{*} = x^{*} + \alpha \cdot sign(\Delta_x J(x, y))$;
-				\EndFor
-				\State \algorithmreturn{$x^{*} = x^{*}_{T}$}.
-			\end{algorithmic}
-		\end{algorithm}
-		
-
-	\subsection{MI-FGSM}
+	 Маючи всі наведені обчислення, можна записати алгоритм знаходження змагального прикладу [\ref{alg:fgsm}].
 	\begin{algorithm}
-	\caption{$MI-FGSM$}
+		\caption{$FGSM$}
+		\label{alg:fgsm}
+		\begin{algorithmic}[1]
+			\State \algorithmicrequire{Приклад $x$, клас $y_{true}$, класифікатор $f$, параметри: $\omega, b$.}
+			\State \algorithmicrequire{значення пертурбації $\epsilon$.}
+			\State \algorithmicensure{ Adversarial $x^{*}$ з нормою $\|x^{*} - x\|_{\infty} \leq \epsilon $;}
+			\State $z = \omega\tran x + b$;
+			\State $\hat{y} = softmax(z)$;
+			\State $\delta = (\hat{y} - y_{true}) \cdot \omega\tran$;
+			\State $x^{*} = Clip_{X, \epsilon} \big\{ x + \alpha \cdot sign( \delta ) \big\}$;
+			\State \algorithmreturn{$x^{*} = x^{*}_{T}$}.
+		\end{algorithmic}
+	\end{algorithm}
+	
+	\section{I-FGSM}
+	Даний метод є модифікацією попереднього, особливість якого полягає в тому, що для знахождення змагального прикладу буде використовуватись ітераційний підхід.	Ми застосовуємо звичайний метод декілька разів з певним невеликим кроком $a$ і після кожного кроку використовуємо $clip$ функцію, для того щоб переконатись що значення знаходяться в $\epsilon$-околі оригінального зображення.
+
+	Ітераційної алгоритм швидкого градієнтного спуску буже мати вигляд [\ref{alg:i-fgsm}].
+	
+	\begin{algorithm}
+		\caption{$I-FGSM$}
+		\label{alg:i-fgsm}
+		\begin{algorithmic}[1]
+			\State \algorithmicrequire{Приклад $x$, значення класу $y_{true}$, класифікатор $f$}
+			\State \algorithmicrequire{значення пертурбації $\epsilon$, кількість ітерації $T$.}
+			\State \algorithmicensure{ Adversarial $x^{*}$ з нормою $\|x^{*} - x\|_{\infty} \leq \epsilon $;}
+			\State $a = \epsilon / T $;
+			\State $x^{*} = x$;
+			\For{$t=0 \; to \; T-1$}
+			\State $x^{*} = Clip_{X, \epsilon} \big\{ x^{*} + \alpha \cdot  sign(\Delta_x J(x, y)) \big\}$;
+			\EndFor
+			\State \algorithmreturn{$x^{*} = x^{*}_{T}$}.
+		\end{algorithmic}
+	\end{algorithm}
+		
+	\newpage
+	\section{TI-FGSM}
+	TI-FGSM або як його ще часто називаюсь Projected Gradient Descent є націленою версією попереднього алгоритму, а отже він дає можливість обрати клас який має передбачити модель. Два попередні методи описаних вище намагалися максимізувати функцію втрати для правильного класу, не вказуючи яким буде неправильний класс. Цей метод - навпаки, мінімізує функцію втрати для деякого заданого неправильного класу. На сам алгоритм це вплине так, що на етапі додавання пертурбації у зображення знак буде змінений на протилежний.
+
+	\begin{algorithm}
+		\caption{$TI-FGSM$}
+		\label{alg:ti-fgsm}
+		\begin{algorithmic}[1]
+			\State \algorithmicrequire{Приклад $x$, значення класу $y_{true}$, класифікатор $f$}
+			\State \algorithmicrequire{значення пертурбації $\epsilon$, кількість ітерації $T$.}
+			\State \algorithmicensure{ Adversarial $x^{*}$ з нормою $\|x^{*} - x\|_{\infty} \leq \epsilon $;}
+			\State $a = \epsilon / T $;
+			\State $x^{*} = x$;
+			\For{$t=0 \; to \; T-1$}
+			\State $x^{*} = Clip_{X, \epsilon} \big\{ x^{*} - \alpha \cdot  sign(\Delta_x J(x, y)) \big\}$;
+			\EndFor
+			\State \algorithmreturn{$x^{*} = x^{*}_{T}$}.
+		\end{algorithmic}
+	\end{algorithm}
+
+	\section{MI-FGSM}
+	Цей метод
+	\begin{algorithm}
+		\caption{$MI-FGSM$}
+		\label{alg:mi-fgsm}
 		\begin{algorithmic}[1]
 			\State \algorithmicrequire{Приклад $x$, значення цілі y, класифікатор $f$.};
 			\State \algorithmicrequire{значення пертурбації $\epsilon$, значення цілі y, кількість ітерації $T$.};
@@ -402,13 +489,31 @@
 		\end{algorithmic}
 	\end{algorithm}
 	
+	\newpage
 	\section{DeepFool}
+	DeepFool була вперше представлена в роботі \textcite{moosavidezfooli2015deepfool}. На відмінно від FGSM методу цей алгоритм не можна використовуватись для націлених атак, де є можливість вибрати клас який має передбачити модель. Отже, його можна використовувати тільки для генерування прикладів які будуть класифікуватись відмінно від правильно класу. Основною метою цього методу є знаходження мінімального необхідного значення пертурбація, для того щоб модель хибно передбачила клас прикладу.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{resources/deepfool.jpg}
+		\caption{Приклад для лінійного бінарного класифікатора \cite{moosavidezfooli2015deepfool}}
+		\label{fig:dfhyperline}
+	\end{figure}
+
+	Для випадку бінарної класифікації легко бачити, що надійність моделі $f$ в точці $ x_{0}, \; \Delta(x_{0}; f)$, дорівнює відстанні від $x_{0}$ до площини гіперпараметра $\mathscr{F} = \{ x: \omega\tran x + b = 0 \}$, яка розділяє два класи (Рис. \ref{fig:dfhyperline}). Таким чином, мінімальний зсув, необхідний для зміни рішення класифікатора відповідає ортогональній проекції $x_{0}$ на $\mathscr{F}$. Це можна записати у вигляді формули:
+	\begin{align}
+		r_{*}(x_{0}) := -\frac{f(x_{0})}{\norm{\omega}_{2}^{2}} \omega .
+	\end{align}
+
+	Для випалку $L2$ норими DeepFool алгоритм для мультикласового випадку буде мати наступний вигляд [\ref{alg:deepfool}].
+	
 	\begin{algorithm}
-		\caption{$DeepFool$}
+		\caption{DeepFool: мультикласовий випадок}
+		\label{alg:deepfool}
 		\begin{algorithmic}[1]
 			\State \algorithmicrequire{Приклад $x$, значення цілі y, класифікатор $f$.};
 			\State \algorithmicrequire{значення цілі y, кількість ітерації $T$.};
-			\State \algorithmicensure{ Adversarial $x^{*}$ з нормою $\|x^{*} - x\|_{inf} \leq \epsilon $};
+			\State \algorithmicensure{ Adversarial $x^{*}$ з нормою $\|x^{*} - x\|_{2} \leq \epsilon $};
 			\State $x_0 = x$; $i = 0$; 
 			\While{$\hat{f}(x_i) = \hat{f}(x_0) $}
 				\For{$k \neq \hat{f}(x_0)$}
@@ -420,80 +525,37 @@
 				\State $x_{i+1} = x_i + r_i$;
 				\State $i = i + 1$;
 			\EndWhile
-			\State \algorithmreturn{$x^{*} = x^{*}_{T}$}.
+			\State \algorithmreturn{$\hat{r} = \sum_{i} r_i $}.
 		\end{algorithmic}
 	\end{algorithm}
 	
-	\section{Нецілеспрямовані атаки} 
-	Основна частина даної роботи полягала у написанні програми. Нижче наводимо основний алгоритм її роботи, на мові C:
-	
-	\begin{lstlisting}[language=Python]
-	#include &lt;stdio.h&gt;
-	int main() 
-	{ 
-	printf("Hello, world!\n"); 
-	return 0; 
-	} 
-	\end{lstlisting}[language=Python]
 
-	\lstset{language=Python}
-	\begin{lstlisting}
-	def fit(self, X, w, b, y, alpha, max_iters, predict_func):
-		# Check that X and y have correct shape
-		self.w = w
-		self.b = b
-		
-		self.y_ = np.expand_dims(y.T, axis=1)
-		self.X_ = X.T
-		
-		self.num_iters = 0
-		self.X_ = self._gradient_descent(self.X_, self.y_, self.w, self.b, alpha, max_iters, predict_func)
-		
-		def _cost_function(self, X, Y, A):
-		m = X.shape[0]
-		if m == 0:
-		return None
-		
-		J = (1 / m) * np.sum(-Y * np.log(A) - (1 - Y) * np.log(1 - A))
-		return J
-	\end{lstlisting}
-	
-	%\begin{algorithm}[H]
-	%	\SetAlgoLined
-	%	\KwResult{Write here the result }
-	%	initialization\;
-	%	\While{While condition}{
-	%		instructions\;
-	%		\eIf{condition}{
-	%			instructions1\;
-	%			instructions2\;
-	%		}{
-	%			instructions3\;
-	%		}
-	%	}
-	%	\caption{How to write algorithms}
-	%\end{algorithm}
+	%\begin{lstlisting}[language=Python]
+	%
+	%\end{lstlisting}[language=Python]
 	% ============================================ %	
-	
-	% ============================================ %
-	\chapter{Альтернативні рішення} 
-	Деякі дослідники пишуть свої роботи в програмах типу Microsoft Word. Але то не є труйово\cite{howto}.	
+	\chapter{Аналіз атак}
+
 	
 	% ============================================ %	
+	\chapter{Методи захисту}
+	
+	% ============================================ %	
+
+
 	\chapter{Висновок} 
-	Дана робота містить значний мій вклад, і перевершує попередні досягнення в багатьох напрямках. Окрім того, даний напрямок досліджень має значні перспективи
-	подальшого розвитку. (Особливо добре було б, якби хтось вирішив проблему кирилиці в listings).
+
 	% ============================================ %
-		
-	% ============================================ %	
-	\newpage
-	\addcontentsline{toc}{chapter}{Література}
-	\begin{thebibliography}{9}
-		
-		\bibitem{howto} Вікіпідручник \emph{Як написати курсову?}
-		(\url{http://uk.wikibooks.org/wiki/%D0%AF%D0%BA_%D0%B2%D1%87%D0%B8%D1%82%D0%B8%D1%81%D1%8C_%D0%BA%D1%80%D0%B0%D1%89%D0%B5%3F/%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D1%96})
-			
-		\end{thebibliography}
-	% ============================================ %
+
+	\nocite{goodfellow2014explaining}
+	\nocite{kurakin2016adversarial}
+	\nocite{moosavidezfooli2015deepfool}
+	\nocite{dong2017boosting}
+	\nocite{dong2019benchmarking}
+	\nocite{yuan2017adversarial}
+	\nocite{kurakin2018adversarial}
 	
+	\printbibliography[title={Бібліографія}]
+	%\printbibliography
+	% ============================================ %
 \end{document}

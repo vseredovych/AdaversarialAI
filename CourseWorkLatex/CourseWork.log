@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.25)  29 APR 2020 17:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.9)  11 MAY 2020 16:44
 entering extended mode
 **./CourseWork.tex
 (CourseWork.tex
@@ -6,8 +6,8 @@ LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-04-06>
 (D:\Apps\MickTech\tex/latex/extsizes\extreport.cls
 Document Class: extreport 1996/10/08 v1.0 Non Standard LaTeX document class
-(D:\Apps\MickTech\tex/latex/extsizes\size14.clo
-File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+(D:\Apps\MickTech\tex/latex/base\size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 (D:\Apps\MickTech\tex/latex/base\exscale.sty
 Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
@@ -30,11 +30,6 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen135
-)
-(D:\Apps\MickTech\tex/latex/base\inputenc.sty
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
 )
 (D:\Apps\MickTech\tex/latex/base\fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
@@ -249,12 +244,24 @@ LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
 (D:\Apps\MickTech\tex/latex/cyrillic\t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
-(D:\Apps\MickTech\tex/generic/babel\babel.sty
-Package: babel 2020/03/22 3.42 The Babel package
-
-(D:\Apps\MickTech\tex/generic/babel\switch.def
-File: switch.def 2020/03/22 3.42 Babel switching mechanism
+(D:\Apps\MickTech\tex/latex/base\inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
 )
+(D:\Apps\MickTech\tex/generic/babel\babel.sty
+Package: babel 2020/04/28 3.43 The Babel package
+
+(D:\Apps\MickTech\tex/generic/babel\babel.def
+File: babel.def 2020/04/28 3.43 Babel common definitions
+\babel@savecnt=\count176
+\U@D=\dimen136
+
+(D:\Apps\MickTech\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count177
+
 *************************************
 * Local config file bblopts.cfg used
 *
@@ -264,55 +271,9 @@ File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
 )
 (D:\Apps\MickTech\tex/latex/babel-ukrainian\ukraineb.ldf
 Language: ukraineb 2018/04/11 1.4c Ukrainian support for the Babel system
-
-(D:\Apps\MickTech\tex/generic/babel\babel.def
-File: babel.def 2020/03/22 3.42 Babel common definitions
-\babel@savecnt=\count176
-\U@D=\dimen136
-
-(D:\Apps\MickTech\tex/generic/babel\txtbabel.def)
-\bbl@readstream=\read2
-\bbl@dirlevel=\count177
-)
 Package babel Info: Making " an active character on input line 118.
 Package babel Info: Default for \cyrdash is provided on input line 161.
 ))
-(D:\Apps\MickTech\tex/latex/psnfss\mathptmx.sty
-Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-\symbold=\mathgroup4
-\symitalic=\mathgroup5
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
-LaTeX Info: Redefining \hbar on input line 50.
-)
 (D:\Apps\MickTech\tex/latex/tools\indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
@@ -626,6 +587,10 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \xmathstrut@box=\box49
 \xmathstrut@dim=\dimen171
 )
+(D:\Apps\MickTech\tex/latex/jknappen\mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup4
+)
 (D:\Apps\MickTech\tex/latex/graphics\graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -717,40 +682,261 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@algorithm=\toks29
 \c@algorithm=\count296
-) (CourseWork.aux)
+)
+(D:\Apps\MickTech\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+
+(D:\Apps\MickTech\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count297
+)
+(D:\Apps\MickTech\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count298
+
+(D:\Apps\MickTech\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count299
+\c@listtotal=\count300
+\c@listcount=\count301
+\c@liststart=\count302
+\c@liststop=\count303
+\c@citecount=\count304
+\c@citetotal=\count305
+\c@multicitecount=\count306
+\c@multicitetotal=\count307
+\c@instcount=\count308
+\c@maxnames=\count309
+\c@minnames=\count310
+\c@maxitems=\count311
+\c@minitems=\count312
+\c@citecounter=\count313
+\c@maxcitecounter=\count314
+\c@savedcitecounter=\count315
+\c@uniquelist=\count316
+\c@uniquename=\count317
+\c@refsection=\count318
+\c@refsegment=\count319
+\c@maxextratitle=\count320
+\c@maxextratitleyear=\count321
+\c@maxextraname=\count322
+\c@maxextradate=\count323
+\c@maxextraalpha=\count324
+\c@abbrvpenalty=\count325
+\c@highnamepenalty=\count326
+\c@lownamepenalty=\count327
+\c@maxparens=\count328
+\c@parenlevel=\count329
+\blx@tempcnta=\count330
+\blx@tempcntb=\count331
+\blx@tempcntc=\count332
+\blx@maxsection=\count333
+\blx@maxsegment@0=\count334
+\blx@notetype=\count335
+\blx@parenlevel@text=\count336
+\blx@parenlevel@foot=\count337
+\blx@sectionciteorder@0=\count338
+\blx@entrysetcounter=\count339
+\labelnumberwidth=\skip60
+\labelalphawidth=\skip61
+\biblabelsep=\skip62
+\bibitemsep=\skip63
+\bibnamesep=\skip64
+\bibinitsep=\skip65
+\bibparsep=\skip66
+\bibhang=\skip67
+\blx@bcfin=\read4
+\blx@bcfout=\write3
+\blx@langwohyphens=\language78
+\c@mincomprange=\count340
+\c@maxcomprange=\count341
+\c@mincompwidth=\count342
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(D:\Apps\MickTech\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count343
+\c@savedafterword=\count344
+\c@annotator=\count345
+\c@savedannotator=\count346
+\c@author=\count347
+\c@savedauthor=\count348
+\c@bookauthor=\count349
+\c@savedbookauthor=\count350
+\c@commentator=\count351
+\c@savedcommentator=\count352
+\c@editor=\count353
+\c@savededitor=\count354
+\c@editora=\count355
+\c@savededitora=\count356
+\c@editorb=\count357
+\c@savededitorb=\count358
+\c@editorc=\count359
+\c@savededitorc=\count360
+\c@foreword=\count361
+\c@savedforeword=\count362
+\c@holder=\count363
+\c@savedholder=\count364
+\c@introduction=\count365
+\c@savedintroduction=\count366
+\c@namea=\count367
+\c@savednamea=\count368
+\c@nameb=\count369
+\c@savednameb=\count370
+\c@namec=\count371
+\c@savednamec=\count372
+\c@translator=\count373
+\c@savedtranslator=\count374
+\c@shortauthor=\count375
+\c@savedshortauthor=\count376
+\c@shorteditor=\count377
+\c@savedshorteditor=\count378
+\c@labelname=\count379
+\c@savedlabelname=\count380
+\c@institution=\count381
+\c@savedinstitution=\count382
+\c@lista=\count383
+\c@savedlista=\count384
+\c@listb=\count385
+\c@savedlistb=\count386
+\c@listc=\count387
+\c@savedlistc=\count388
+\c@listd=\count389
+\c@savedlistd=\count390
+\c@liste=\count391
+\c@savedliste=\count392
+\c@listf=\count393
+\c@savedlistf=\count394
+\c@location=\count395
+\c@savedlocation=\count396
+\c@organization=\count397
+\c@savedorganization=\count398
+\c@origlocation=\count399
+\c@savedoriglocation=\count400
+\c@origpublisher=\count401
+\c@savedorigpublisher=\count402
+\c@publisher=\count403
+\c@savedpublisher=\count404
+\c@language=\count405
+\c@savedlanguage=\count406
+\c@origlanguage=\count407
+\c@savedoriglanguage=\count408
+\c@pageref=\count409
+\c@savedpageref=\count410
+\shorthandwidth=\skip68
+\shortjournalwidth=\skip69
+\shortserieswidth=\skip70
+\shorttitlewidth=\skip71
+\shortauthorwidth=\skip72
+\shorteditorwidth=\skip73
+\locallabelnumberwidth=\skip74
+\locallabelalphawidth=\skip75
+\localshorthandwidth=\skip76
+\localshortjournalwidth=\skip77
+\localshortserieswidth=\skip78
+\localshorttitlewidth=\skip79
+\localshortauthorwidth=\skip80
+\localshorteditorwidth=\skip81
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(D:\Apps\MickTech\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(D:\Apps\MickTech\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count411
+\c@textcitetotal=\count412
+\c@textcitemaxnames=\count413
+\c@biburlbigbreakpenalty=\count414
+\c@biburlbreakpenalty=\count415
+\c@biburlnumpenalty=\count416
+\c@biburlucpenalty=\count417
+\c@biburllcpenalty=\count418
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count419
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(D:\Apps\MickTech\tex/latex/biblatex/bbx\numeric.bbx
+File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(D:\Apps\MickTech\tex/latex/biblatex/bbx\standard.bbx
+File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count420
+\c@bbx:relatedtotal=\count421
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(D:\Apps\MickTech\tex/latex/biblatex/cbx\numeric.cbx
+File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(D:\Apps\MickTech\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+))
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count422
+\@quotereset=\count423
+(CourseWork.aux)
 \openout1 = `CourseWork.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Trying to load font information for T2A+ptm on input line 1
-03.
-LaTeX Font Info:    No file T2Aptm.fd. on input line 103.
-
-
-LaTeX Font Warning: Font shape `T2A/ptm/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 103.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
 \AtBeginShipoutBox=\box53
-Package hyperref Info: Link coloring OFF on input line 103.
-(D:\Apps\MickTech\tex/latex/hyperref\nameref.sty
+Package hyperref Info: Link coloring OFF on input line 107.
+ (D:\Apps\MickTech\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
 (D:\Apps\MickTech\tex/latex/refcount\refcount.sty
@@ -759,36 +945,36 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (D:\Apps\MickTech\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count297
+\c@section@level=\count424
 )
-LaTeX Info: Redefining \ref on input line 103.
-LaTeX Info: Redefining \pageref on input line 103.
-LaTeX Info: Redefining \nameref on input line 103.
+LaTeX Info: Redefining \ref on input line 107.
+LaTeX Info: Redefining \pageref on input line 107.
+LaTeX Info: Redefining \nameref on input line 107.
 
 (CourseWork.out) (CourseWork.out)
-\@outlinefile=\write3
-\openout3 = `CourseWork.out'.
+\@outlinefile=\write4
+\openout4 = `CourseWork.out'.
 
 
 (D:\Apps\MickTech\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
+\scratchcounter=\count425
 \scratchdimen=\dimen181
 \scratchbox=\box54
-\nofMPsegments=\count299
-\nofMParguments=\count300
+\nofMPsegments=\count426
+\nofMParguments=\count427
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count301
+\MPscratchCnt=\count428
 \MPscratchDim=\dimen182
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
+\MPnumerator=\count429
+\makeMPintoPDFobject=\count430
 \everyMPtoPDFconversion=\toks31
 ) (D:\Apps\MickTech\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-\c@lstlisting=\count304
+\c@lstlisting=\count431
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -806,15 +992,15 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 * \textheight=731.23584pt
 * \oddsidemargin=27.31465pt
 * \evensidemargin=27.31465pt
-* \topmargin=-56.21265pt
-* \headheight=12.39542pt
+* \topmargin=-54.14804pt
+* \headheight=10.33081pt
 * \headsep=28.45274pt
-* \topskip=14.0pt
+* \topskip=12.0pt
 * \footskip=28.45274pt
-* \marginparwidth=15.0pt
+* \marginparwidth=35.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -827,183 +1013,142 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Trying to load language 'ukrainian'...
+Package biblatex Info: ... file 'ukrainian.lbx' found.
+(D:\Apps\MickTech\tex/latex/biblatex/lbx\ukrainian.lbx
+File: ukrainian.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `CourseWork.bcf'.
 
-LaTeX Font Warning: Font shape `T2A/ptm/b/n' undefined
-(Font)              using `T2A/ptm/m/n' instead on input line 116.
-
-
-LaTeX Font Warning: Font shape `T2A/ptm/b/sc' undefined
-(Font)              using `T2A/ptm/b/n' instead on input line 116.
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'CourseWork.bbl' found.
+ (CourseWork.bbl)
+Package biblatex Info: Reference section=0 on input line 107.
+Package biblatex Info: Reference segment=0 on input line 107.
 
 [2
 
 {C:/Users/victo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (CourseWork.toc
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-.
- (D:\Apps\MickTech\tex/latex/psnfss\ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 3.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 6.
 
-(D:\Apps\MickTech\tex/latex/psnfss\ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 3.
-
-(D:\Apps\MickTech\tex/latex/psnfss\omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 3.
-
-(D:\Apps\MickTech\tex/latex/psnfss\omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 3.
-
-(D:\Apps\MickTech\tex/latex/psnfss\omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-)
-\tf@toc=\write4
-\openout4 = `CourseWork.toc'.
+ (D:\Apps\MickTech\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+))
+\tf@toc=\write5
+\openout5 = `CourseWork.toc'.
 
  [1
 
 ]
 {\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 1.
-
-LaTeX Font Warning: Font shape `T2A/ptm/m/it' undefined
-(Font)              using `T2A/ptm/m/n' instead on input line 168.
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-71.
-(D:\Apps\MickTech\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
-
- []
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.179 	\newline \par
-                     [2
+l.185 ...ий приклад (Adversarial sample)}
+                                                   [2
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--184
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-
- []
-
-[3]
+] [3]
 {\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--243
+Underfull \hbox (badness 10000) in paragraph at lines 254--267
 
  []
 
 [4
 
-] [5]
+]
+<resources/minist_dataset.jpg, id=124, 572.1375pt x 559.08875pt>
+File: resources/minist_dataset.jpg Graphic file (type jpg)
+<use resources/minist_dataset.jpg>
+Package pdftex.def Info: resources/minist_dataset.jpg  used on input line 292.
+(pdftex.def)             Requested size: 182.09486pt x 177.93951pt.
+ [5 <./resources/minist_dataset.jpg>]
 {\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 3.
 [6
 
-]
+] [7]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 373.
- [7] (D:\Apps\MickTech\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-430.
-
-(D:\Apps\MickTech\tex/latex/cyrillic\t2acmtt.fd
-File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-) [8] [9]
+put line 418.
+ [8] [9]
+<resources/deepfool.jpg, id=170, 856.70062pt x 445.665pt>
+File: resources/deepfool.jpg Graphic file (type jpg)
+<use resources/deepfool.jpg>
+Package pdftex.def Info: resources/deepfool.jpg  used on input line 498.
+(pdftex.def)             Requested size: 455.24411pt x 236.82014pt.
+ [10 <./resources/deepfool.jpg>] [11]
 {\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 4.
-[10
-
-]
-{\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 5.
-[11
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 493--495
-\T2A/cmtt/m/n/14.4 wiki / %D0 % AF % D0 % BA _ %D0 % B2 % D1 % 87 % D0 % B8 % D
-1 % 82 % D0 % B8 % D1 % 81 % D1 %
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 493--495
-\T2A/cmtt/m/n/14.4 8C _ %D0 % BA % D1 % 80 % D0 % B0 % D1 % 89 % D0 % B5 % 3F /
- %D0 % 9A % D1 % 83 % D1 % 80 % D1 %
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 499.
 [12
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 499.
+{\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 5.
+
+Overfull \hbox (3.81696pt too wide) in paragraph at lines 565--571
+\T2A/cmr/m/n/12 The randomness can be added to ei-ther the input [62] or the mo
+del [14, 35]. The randomness
+ []
+
+[13
+
+] [14]
+{\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 6.
+[15
+
+]
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
+599.
+ (D:\Apps\MickTech\tex/latex/cyrillic\t2acmtt.fd
+File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 602.
+ [16
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 602.
  (CourseWork.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 499.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 499.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 602.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 602.
 Package rerunfilecheck Info: File `CourseWork.out' has not changed.
-(rerunfilecheck)             Checksum: A05F91493FD5D3129435D77ECF4E1F6A;2654.
+(rerunfilecheck)             Checksum: 7EA3E6D2AFB49384EECF23298890EFBE;2340.
+Package logreq Info: Writing requests to 'CourseWork.run.xml'.
+\openout1 = `CourseWork.run.xml'.
 
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 499.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 602.
  ) 
 Here is how much of TeX's memory you used:
- 16501 strings out of 480930
- 243474 string characters out of 2914705
- 789556 words of memory out of 3000000
- 32025 multiletter control sequences out of 15000+200000
- 562989 words of font info for 86 fonts, out of 3000000 for 9000
+ 23248 strings out of 481005
+ 376194 string characters out of 2915737
+ 1054833 words of memory out of 3000000
+ 38695 multiletter control sequences out of 15000+200000
+ 551036 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,12n,42p,682b,1309s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,15n,61p,1507b,1781s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Apps/MickTech/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{D:/Apps/MickTech
-/fonts/enc/dvips/base/8r.enc}<D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/c
-mex10.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Apps/
-MickTech/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Apps/MickTech/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sf
-rm0600.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfrm1000.pfb><D:/Apps/
-MickTech/fonts/type1/public/cm-super/sfrm1200.pfb><D:/Apps/MickTech/fonts/type1
-/public/cm-super/sfrm1440.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfr
-m1728.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfrm2074.pfb><D:/Apps/M
-ickTech/fonts/type1/public/cm-super/sfrm2488.pfb><D:/Apps/MickTech/fonts/type1/
-public/cm-super/sfrm2986.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfrm
-3583.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sftt1000.pfb><D:/Apps/Mi
-ckTech/fonts/type1/public/cm-super/sftt1440.pfb><D:/Apps/MickTech/fonts/type1/u
-rw/symbol/usyr.pfb><D:/Apps/MickTech/fonts/type1/urw/symbol/usyr.pfb><D:/Apps/M
-ickTech/fonts/type1/urw/times/utmr8a.pfb><D:/Apps/MickTech/fonts/type1/urw/time
-s/utmri8a.pfb>
-Output written on CourseWork.pdf (13 pages, 313745 bytes).
+/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<D:/Apps/MickTech/fonts/type1/public
+/amsfonts/cm/cmex10.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cmextra/c
+mex8.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Apps/M
+ickTech/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Apps/MickTech/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/c
+mmib10.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><D:
+/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Apps/MickTech/fonts
+/type1/public/amsfonts/cm/cmr6.pfb><D:/Apps/MickTech/fonts/type1/public/amsfont
+s/cm/cmr8.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/A
+pps/MickTech/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Apps/MickTech/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb><D:/Apps/MickTech/fonts/type1/public/rsfs/rsf
+s10.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfbx1200.pfb><D:/Apps/Mic
+kTech/fonts/type1/public/cm-super/sfbx1728.pfb><D:/Apps/MickTech/fonts/type1/pu
+blic/cm-super/sfbx2488.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfrm10
+00.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfrm1095.pfb><D:/Apps/Mick
+Tech/fonts/type1/public/cm-super/sfrm1200.pfb><D:/Apps/MickTech/fonts/type1/pub
+lic/cm-super/sfti1200.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sftt120
+0.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfxc2074.pfb>
+Output written on CourseWork.pdf (17 pages, 537357 bytes).
 PDF statistics:
- 283 PDF objects out of 1000 (max. 8388607)
- 66 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 147 words of extra memory for PDF output out of 10000 (max. 10000000)
 
