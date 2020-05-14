@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.9)  11 MAY 2020 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.9)  14 MAY 2020 15:26
 entering extended mode
 **./CourseWork.tex
 (CourseWork.tex
@@ -1028,16 +1028,15 @@ Package biblatex Info: ... file 'CourseWork.bbl' found.
  (CourseWork.bbl)
 Package biblatex Info: Reference section=0 on input line 107.
 Package biblatex Info: Reference segment=0 on input line 107.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 13
+0.
 
-[2
-
-{C:/Users/victo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(CourseWork.toc
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 6.
-
- (D:\Apps\MickTech\tex/latex/jknappen\ursfs.fd
+(D:\Apps\MickTech\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-))
+) [2
+
+{C:/Users/victo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (CourseWork
+.toc)
 \tf@toc=\write5
 \openout5 = `CourseWork.toc'.
 
@@ -1049,106 +1048,122 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.185 ...ий приклад (Adversarial sample)}
+l.184 ...ий приклад (Adversarial sample)}
                                                    [2
 
 ] [3]
 {\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--267
+Underfull \hbox (badness 10000) in paragraph at lines 253--266
 
  []
 
 [4
 
 ]
-<resources/minist_dataset.jpg, id=124, 572.1375pt x 559.08875pt>
+<resources/minist_dataset.jpg, id=130, 572.1375pt x 559.08875pt>
 File: resources/minist_dataset.jpg Graphic file (type jpg)
 <use resources/minist_dataset.jpg>
-Package pdftex.def Info: resources/minist_dataset.jpg  used on input line 292.
+Package pdftex.def Info: resources/minist_dataset.jpg  used on input line 291.
 (pdftex.def)             Requested size: 182.09486pt x 177.93951pt.
- [5 <./resources/minist_dataset.jpg>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--301
+
+ []
+
+[5 <./resources/minist_dataset.jpg>]
 {\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 3.
 [6
 
 ] [7]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 418.
- [8] [9]
-<resources/deepfool.jpg, id=170, 856.70062pt x 445.665pt>
+put line 414.
+ [8] [9] [10]
+<resources/deepfool.jpg, id=192, 856.70062pt x 445.665pt>
 File: resources/deepfool.jpg Graphic file (type jpg)
 <use resources/deepfool.jpg>
-Package pdftex.def Info: resources/deepfool.jpg  used on input line 498.
+Package pdftex.def Info: resources/deepfool.jpg  used on input line 497.
 (pdftex.def)             Requested size: 455.24411pt x 236.82014pt.
- [10 <./resources/deepfool.jpg>] [11]
+ [11 <./resources/deepfool.jpg>] [12]
 {\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 4.
-[12
 
-]
-{\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 5.
+Underfull \hbox (badness 10000) in paragraph at lines 572--574
 
-Overfull \hbox (3.81696pt too wide) in paragraph at lines 565--571
-\T2A/cmr/m/n/12 The randomness can be added to ei-ther the input [62] or the mo
-del [14, 35]. The randomness
  []
 
 [13
 
-] [14]
+]
+{\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--579
+
+ []
+
+[14
+
+]
 {\cyrillictext \CYRR \cyro \cyrz \cyrd \cyrii \cyrl } 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--584
+
+ []
+
 [15
 
 ]
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-599.
+593.
  (D:\Apps\MickTech\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 602.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 596.
  [16
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 602.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 596.
  (CourseWork.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 602.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 602.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 596.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 596.
 Package rerunfilecheck Info: File `CourseWork.out' has not changed.
-(rerunfilecheck)             Checksum: 7EA3E6D2AFB49384EECF23298890EFBE;2340.
+(rerunfilecheck)             Checksum: B1056CEDF7B3844D5F0A39E6DEDE9066;2417.
 Package logreq Info: Writing requests to 'CourseWork.run.xml'.
 \openout1 = `CourseWork.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 602.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 596.
  ) 
 Here is how much of TeX's memory you used:
- 23248 strings out of 481005
- 376194 string characters out of 2915737
- 1054833 words of memory out of 3000000
- 38695 multiletter control sequences out of 15000+200000
- 551036 words of font info for 64 fonts, out of 3000000 for 9000
+ 23275 strings out of 481005
+ 376585 string characters out of 2915737
+ 1055947 words of memory out of 3000000
+ 38716 multiletter control sequences out of 15000+200000
+ 553625 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,15n,61p,1507b,1781s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,15n,61p,1480b,1769s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Apps/MickTech/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{D:/Apps/MickTech
 /fonts/enc/dvips/cm-super/cm-super-ts1.enc}<D:/Apps/MickTech/fonts/type1/public
-/amsfonts/cm/cmex10.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cmextra/c
-mex8.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Apps/M
-ickTech/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Apps/MickTech/fonts/type1/
-public/amsfonts/cm/cmmi8.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/c
-mmib10.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><D:
-/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Apps/MickTech/fonts
-/type1/public/amsfonts/cm/cmr6.pfb><D:/Apps/MickTech/fonts/type1/public/amsfont
-s/cm/cmr8.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/A
-pps/MickTech/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Apps/MickTech/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb><D:/Apps/MickTech/fonts/type1/public/rsfs/rsf
-s10.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfbx1200.pfb><D:/Apps/Mic
-kTech/fonts/type1/public/cm-super/sfbx1728.pfb><D:/Apps/MickTech/fonts/type1/pu
-blic/cm-super/sfbx2488.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfrm10
-00.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfrm1095.pfb><D:/Apps/Mick
-Tech/fonts/type1/public/cm-super/sfrm1200.pfb><D:/Apps/MickTech/fonts/type1/pub
-lic/cm-super/sfti1200.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sftt120
-0.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfxc2074.pfb>
-Output written on CourseWork.pdf (17 pages, 537357 bytes).
+/amsfonts/cm/cmex10.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Apps/MickT
+ech/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Apps/MickTech/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmmib10.pfb><D:/Apps/Mick
+Tech/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Apps/MickTech/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmr6
+.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Apps/MickTec
+h/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Apps/MickTech/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmsy6.p
+fb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Apps/MickTech
+/fonts/type1/public/rsfs/rsfs10.pfb><D:/Apps/MickTech/fonts/type1/public/cm-sup
+er/sfbx1200.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfbx1440.pfb><D:/
+Apps/MickTech/fonts/type1/public/cm-super/sfbx1728.pfb><D:/Apps/MickTech/fonts/
+type1/public/cm-super/sfbx2488.pfb><D:/Apps/MickTech/fonts/type1/public/cm-supe
+r/sfrm1000.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super/sfrm1200.pfb><D:/A
+pps/MickTech/fonts/type1/public/cm-super/sfrm1440.pfb><D:/Apps/MickTech/fonts/t
+ype1/public/cm-super/sfti1200.pfb><D:/Apps/MickTech/fonts/type1/public/cm-super
+/sftt1200.pfb>
+Output written on CourseWork.pdf (17 pages, 591194 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 147 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 342 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 155 words of extra memory for PDF output out of 10000 (max. 10000000)
 

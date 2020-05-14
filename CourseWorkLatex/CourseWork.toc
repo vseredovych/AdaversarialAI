@@ -17,20 +17,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Методи атак}{6}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Атака шумом}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.1}FGSM}{7}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}FGSM}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.2}I-FGSM}{8}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}I-FGSM}{8}{section.3.3}%
+\contentsline {section}{\numberline {3.3}TI-FGSM}{9}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}TI-FGSM}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.4}MI-FGSM}{9}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}MI-FGSM}{9}{section.3.5}%
+\contentsline {section}{\numberline {3.5}DeepFool}{11}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}DeepFool}{10}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Методи захисту}{13}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Аналіз атак}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Randomization}{13}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Методи захисту}{13}{chapter.5}%
+\contentsline {section}{\numberline {4.2}Denoising}{13}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Аналіз атак}{14}{chapter.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Висновок}{15}{chapter.6}%
