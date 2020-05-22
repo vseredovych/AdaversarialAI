@@ -112,3 +112,26 @@ def benchmark_models(X, y_labels, model, num_steps=10):
     plt.plot(np.array(x4), y4, linestyle='--', marker='o', markersize=2, color='red', label = label4)
     # plt.plot(np.array(x5), y5, linestyle='--', marker='o', markersize=2, color='orange', label = label5)
     plt.legend()
+    
+    
+# def compare_benchmark_models(X, y_labels, model, num_steps=10, x11, x22, x44, y11, y22, y44):
+#     x1, y1, label1 = untargeted_attack_benchmark(X, y_labels, model=model, attack_model=AttackIFGSM, samples=100, num_steps=num_steps)
+#     x2, y2, label2 = untargeted_attack_benchmark(X, y_labels, model=model, attack_model=AttackFGSM, samples=100, num_steps=num_steps)
+#     #x3, y3, label3 = untargeted_attack_benchmark(X, y_labels, model=model, attack_model=AttackNoise, samples=100, num_steps=num_steps)
+#     x4, y4, label4 = untargeted_attack_benchmark(X, y_labels, model=model, attack_model=AttackDeepFool, samples=100, num_steps=num_steps)
+#     # x5, y5, label5 = untargeted_attack_benchmark(X_test_correct, y_labels, model=lg, attack_model=AttackMIFGSM, samples=100)
+
+#     fig, ax = plt.subplots(num=None, figsize=(12, 6), dpi=100, facecolor='w')
+#     plt.grid(which='major', linestyle='-', color='black', alpha=0.2)
+#     ax.set_title('Perturbation vs Success Rate')
+#     ax.set_xlabel(r"Perturbation $\epsilon$")
+#     ax.set_ylabel('Success Rate (%)')
+
+#     plt.plot(np.array(x1), y1, linestyle='--', marker='o', markersize=2, color='#00A658', label = label1)
+#     plt.plot(np.array(x2), y2, linestyle='--', marker='o', markersize=2, color='#2300A8', label = label2)
+#     plt.plot(np.array(x3), y3, linestyle='--', marker='o', markersize=2, color='grey', label = label3)
+#     plt.plot(np.array(x11), y11, linestyle='--', marker='o', markersize=2, color='#00A658', label = "")
+#     plt.plot(np.array(x22), y22, linestyle='--', marker='o', markersize=2, color='#2300A8', label = "")
+#     plt.plot(np.array(x44), y44, linestyle='--', marker='o', markersize=2, color='red', label = "")
+
+#     plt.legend()

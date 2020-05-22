@@ -8,14 +8,16 @@ class CustomLogisticRegression():
         self.normalize = normalize
         self.__mean = None
         self.__std = None
-    
+
     def get_mean(self):
         return self.__mean
     
     def get_std(self):
         return self.__std
     
-    def fit(self, X_vert, Y_vert, alpha, num_iters, epsilon):
+    def fit(self, X_vert, Y_vert, alpha, num_iters, epsilon, batch_size):
+        self.batch_size = batch_size
+        
         # X transformations
         if self.normalize == True:
             self.X_ = self.__normalize(X_vert)
@@ -127,6 +129,30 @@ class CustomLogisticRegression():
 
         return cost, derivative_weights, derivative_bias
 
+    def __create_mini_batches(self, X, Y, batch_size):
+        m = X.shape[1]
+        x_columns = X.shape[0]
+        
+        permutation = list(np.random.permutation(m))
+        shuffled_X = X[:, permutation]        
+        shuffled_Y = Y[:, permutation]
+        data = np.vstack((shuffled_X, shuffled_Y))
+
+        mini_batches = []
+        n_minibatches = m // batch_size
+        
+        for i in range(n_minibatches): 
+            mini_batch = data[:, i * batch_size:(i + 1)*batch_size] 
+            X_mini = mini_batch[:x_columns, :] 
+            Y_mini = mini_batch[x_columns:, :]
+            mini_batches.append((X_mini, Y_mini))
+        if m % batch_size != 0:
+            mini_batch = data[:, (i+1) * batch_size:m] 
+            X_mini = mini_batch[:x_columns, :]
+            Y_mini = mini_batch[x_columns:, :]
+            mini_batches.append((X_mini, Y_mini)) 
+        return mini_batches
+    
     def __gradient_descent(self, X, Y, W, b, alpha, num_iters, epsilon):        
         # num of samples
         m = X.shape[0]
@@ -136,10 +162,12 @@ class CustomLogisticRegression():
         J_history = []
 
         for i in range(num_iters):
-            J, delta_weights, delta_bias = self.__forward_backward_propagation(X, Y, W, b)
+            mini_batches = self.__create_mini_batches(X, Y, self.batch_size) 
+            for (X_mini, Y_mini) in mini_batches:
+                J, delta_weights, delta_bias = self.__forward_backward_propagation(X_mini, Y_mini, W, b)
 
-            W = W - alpha * delta_weights
-            b = b - alpha * delta_bias
+                W = W - alpha * delta_weights
+                b = b - alpha * delta_bias
 
             if i % 100 == 0:
                 print(f"{i} iteration: {J}")
