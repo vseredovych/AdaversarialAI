@@ -3,11 +3,30 @@ from numpy import linalg as LA
 from sklearn.utils.validation import check_X_y, check_array, check_is_fitted
 from sklearn.utils.multiclass import unique_labels
 
+import numpy as np
+from numpy import linalg as LA
+from sklearn.utils.validation import check_X_y, check_array, check_is_fitted
+from sklearn.utils.multiclass import unique_labels
+
 class CustomLogisticRegression():
-    def __init__(self, normalize=True):
+    def __init__(self, 
+                 normalize=True, 
+                 learning_rate=0.1, 
+                 num_iters=200, 
+                 epsilon=1e-10, 
+                 batch_size=1024, 
+                 momentum=0.9):
+        
         self.normalize = normalize
         self.__mean = None
         self.__std = None
+        
+        self.learning_rate = learning_rate
+        self.num_iters = num_iters
+        self.epsilon = epsilon
+        self.batch_size = batch_size
+        self.momentum = momentum
+        
 
     def get_mean(self):
         return self.__mean
@@ -15,9 +34,7 @@ class CustomLogisticRegression():
     def get_std(self):
         return self.__std
     
-    def fit(self, X_vert, Y_vert, alpha, num_iters, epsilon, batch_size):
-        self.batch_size = batch_size
-        
+    def fit(self, X_vert, Y_vert):
         # X transformations
         if self.normalize == True:
             self.X_ = self.__normalize(X_vert)
@@ -30,7 +47,9 @@ class CustomLogisticRegression():
 
         self.W = np.full(( self.X_.shape[0],self.Y_.shape[0]),0.01)
         self.b = 0.0
-        self.W, self.b, self.Js = self.__gradient_descent(self.X_, self.Y_, self.W, self.b, alpha, num_iters, epsilon)
+        self.W, self.b, self.Js = self.__gradient_descent(
+            self.X_, self.Y_, self.W, self.b, self.learning_rate, self.num_iters, self.epsilon, self.momentum, self.batch_size
+        )
 
     def predict(self, X):
         # Check is fit had been called
@@ -131,43 +150,46 @@ class CustomLogisticRegression():
 
     def __create_mini_batches(self, X, Y, batch_size):
         m = X.shape[1]
-        x_columns = X.shape[0]
-        
+
+        if batch_size == -1:
+            batch_size = m
+                
         permutation = list(np.random.permutation(m))
         shuffled_X = X[:, permutation]        
         shuffled_Y = Y[:, permutation]
-        data = np.vstack((shuffled_X, shuffled_Y))
 
         mini_batches = []
         n_minibatches = m // batch_size
         
         for i in range(n_minibatches): 
-            mini_batch = data[:, i * batch_size:(i + 1)*batch_size] 
-            X_mini = mini_batch[:x_columns, :] 
-            Y_mini = mini_batch[x_columns:, :]
+            X_mini = shuffled_X[:, i * batch_size:(i + 1)*batch_size] 
+            Y_mini = shuffled_Y[:, i * batch_size:(i + 1)*batch_size] 
             mini_batches.append((X_mini, Y_mini))
         if m % batch_size != 0:
-            mini_batch = data[:, (i+1) * batch_size:m] 
-            X_mini = mini_batch[:x_columns, :]
-            Y_mini = mini_batch[x_columns:, :]
+            X_mini = shuffled_X[:, (i+1) * batch_size:m] 
+            Y_mini = shuffled_Y[:, (i+1) * batch_size:m] 
             mini_batches.append((X_mini, Y_mini)) 
         return mini_batches
     
-    def __gradient_descent(self, X, Y, W, b, alpha, num_iters, epsilon):        
+    def __gradient_descent(self, X, Y, W, b, learning_rate, num_iters, epsilon, momentum, batch_size):        
         # num of samples
-        m = X.shape[0]
+        print(self.get_params())
         # num of features
         n = X.shape[1]
 
         J_history = []
-
+        VdW = 0
+        Vdb = 0
         for i in range(num_iters):
-            mini_batches = self.__create_mini_batches(X, Y, self.batch_size) 
+            mini_batches = self.__create_mini_batches(X, Y, batch_size) 
             for (X_mini, Y_mini) in mini_batches:
                 J, delta_weights, delta_bias = self.__forward_backward_propagation(X_mini, Y_mini, W, b)
-
-                W = W - alpha * delta_weights
-                b = b - alpha * delta_bias
+                
+                VdW = (momentum * VdW + (1 - momentum) * delta_weights / (1 - momentum ** (i + 1)))
+                Vdb = (momentum * Vdb + (1 - momentum) * delta_bias / (1 - momentum ** (i + 1)))
+                
+                W = W - learning_rate * VdW
+                b = b - learning_rate * Vdb
 
             if i % 100 == 0:
                 print(f"{i} iteration: {J}")
@@ -175,3 +197,17 @@ class CustomLogisticRegression():
             J_history.append(J)
 
         return W, b, J_history
+    
+    def get_params(self, deep=True):
+        return {
+                "learning_rate": self.learning_rate,
+                "num_iters": self.num_iters,
+                "batch_size": self.batch_size,
+                "momentum": self.momentum,
+                "normalize": self.normalize
+               }
+    
+    def set_params(self, **parameters):
+        for parameter, value in parameters.items():
+            setattr(self, parameter, value)
+        return self
