@@ -181,7 +181,6 @@
       \field{eprinttype}{arXiv}
       \field{title}{Boosting Adversarial Attacks with Momentum}
       \field{year}{2017}
-      \true{nocite}
       \verb{eprint}
       \verb 1710.06081
       \endverb
@@ -360,9 +359,124 @@
       \field{eprinttype}{arXiv}
       \field{title}{Adversarial Attacks and Defences Competition}
       \field{year}{2018}
-      \true{nocite}
       \verb{eprint}
       \verb 1804.00097
+      \endverb
+    \endentry
+    \entry{naseer2018local}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=d2067f49891ea04bc40d0c162f88d741}{%
+           family={Naseer},
+           familyi={N\bibinitperiod},
+           given={Muzammal},
+           giveni={M\bibinitperiod}}}%
+        {{hash=17529ca3b415b78e87c1e97ab15a2f9b}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Salman\bibnamedelima H.},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=614198715471d146b77068d419298d26}{%
+           family={Porikli},
+           familyi={P\bibinitperiod},
+           given={Fatih},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{7315932371b2b82bddca50272d0c7b65}
+      \strng{fullhash}{7315932371b2b82bddca50272d0c7b65}
+      \strng{bibnamehash}{7315932371b2b82bddca50272d0c7b65}
+      \strng{authorbibnamehash}{7315932371b2b82bddca50272d0c7b65}
+      \strng{authornamehash}{7315932371b2b82bddca50272d0c7b65}
+      \strng{authorfullhash}{7315932371b2b82bddca50272d0c7b65}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Local Gradients Smoothing: Defense against localized adversarial attacks}
+      \field{year}{2018}
+      \true{nocite}
+      \verb{eprint}
+      \verb 1807.01216
+      \endverb
+    \endentry
+    \entry{prakash2018deflecting}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=59c6db6ac950a47010e416b411c2178d}{%
+           family={Prakash},
+           familyi={P\bibinitperiod},
+           given={Aaditya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fe99f8fcbb53fe83a16fee0860abd798}{%
+           family={Moran},
+           familyi={M\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f53f3e6b3fe35d6d10b2646f2616a58a}{%
+           family={Garber},
+           familyi={G\bibinitperiod},
+           given={Solomon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7ebec28def8033d333667a6a383eb298}{%
+           family={DiLillo},
+           familyi={D\bibinitperiod},
+           given={Antonella},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b5c31a1faf2c6bfef9a7bcec440219e8}{%
+           family={Storer},
+           familyi={S\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1eb02bba41b8a520f714bd8a6a053f2e}
+      \strng{fullhash}{8fb60dc1ac6ee9c2fa3bb2b72db396f0}
+      \strng{bibnamehash}{1eb02bba41b8a520f714bd8a6a053f2e}
+      \strng{authorbibnamehash}{1eb02bba41b8a520f714bd8a6a053f2e}
+      \strng{authornamehash}{1eb02bba41b8a520f714bd8a6a053f2e}
+      \strng{authorfullhash}{8fb60dc1ac6ee9c2fa3bb2b72db396f0}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Deflecting Adversarial Attacks with Pixel Deflection}
+      \field{year}{2018}
+      \true{nocite}
+      \verb{eprint}
+      \verb 1801.08926
+      \endverb
+    \endentry
+    \entry{santhanam2018defending}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=d225428d212d87d83793a6c3b8cbf150}{%
+           family={Santhanam},
+           familyi={S\bibinitperiod},
+           given={Gokula\bibnamedelima Krishnan},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=09da42ce6104d73ba8fd62c66c0a0af2}{%
+           family={Grnarova},
+           familyi={G\bibinitperiod},
+           given={Paulina},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f4bca0d7a66756fff61687e91e73e202}
+      \strng{fullhash}{f4bca0d7a66756fff61687e91e73e202}
+      \strng{bibnamehash}{f4bca0d7a66756fff61687e91e73e202}
+      \strng{authorbibnamehash}{f4bca0d7a66756fff61687e91e73e202}
+      \strng{authornamehash}{f4bca0d7a66756fff61687e91e73e202}
+      \strng{authorfullhash}{f4bca0d7a66756fff61687e91e73e202}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{stat.ML}
+      \field{eprinttype}{arXiv}
+      \field{title}{Defending Against Adversarial Attacks by Leveraging an Entire GAN}
+      \field{year}{2018}
+      \true{nocite}
+      \verb{eprint}
+      \verb 1805.10652
       \endverb
     \endentry
     \entry{dong2019benchmarking}{misc}{}

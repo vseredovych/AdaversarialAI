@@ -2191,13 +2191,18 @@
     <bcf:citekey order="7">moosavidezfooli2015deepfool</bcf:citekey>
     <bcf:citekey order="8">moosavidezfooli2015deepfool</bcf:citekey>
     <bcf:citekey order="9">kurakin2018adversarial</bcf:citekey>
-    <bcf:citekey order="10">goodfellow2014explaining</bcf:citekey>
-    <bcf:citekey order="11" nocite="1">kurakin2016adversarial</bcf:citekey>
-    <bcf:citekey order="12">moosavidezfooli2015deepfool</bcf:citekey>
-    <bcf:citekey order="13">dong2017boosting</bcf:citekey>
-    <bcf:citekey order="14" nocite="1">dong2019benchmarking</bcf:citekey>
-    <bcf:citekey order="15" nocite="1">yuan2017adversarial</bcf:citekey>
-    <bcf:citekey order="16">kurakin2018adversarial</bcf:citekey>
+    <bcf:citekey order="10">prakash2018deflecting</bcf:citekey>
+    <bcf:citekey order="11">prakash2018deflecting</bcf:citekey>
+    <bcf:citekey order="12">goodfellow2014explaining</bcf:citekey>
+    <bcf:citekey order="13" nocite="1">kurakin2016adversarial</bcf:citekey>
+    <bcf:citekey order="14">moosavidezfooli2015deepfool</bcf:citekey>
+    <bcf:citekey order="15">dong2017boosting</bcf:citekey>
+    <bcf:citekey order="16" nocite="1">dong2019benchmarking</bcf:citekey>
+    <bcf:citekey order="17" nocite="1">yuan2017adversarial</bcf:citekey>
+    <bcf:citekey order="18">kurakin2018adversarial</bcf:citekey>
+    <bcf:citekey order="19" nocite="1">naseer2018local</bcf:citekey>
+    <bcf:citekey order="20" nocite="1">santhanam2018defending</bcf:citekey>
+    <bcf:citekey order="21">prakash2018deflecting</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">

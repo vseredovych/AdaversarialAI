@@ -22,7 +22,6 @@ class Randomization():
                 p_t, p_b, p_l, p_r = (0, 0, 0, 0)
             else:
                 p_t, p_b, p_l, p_r = np.random.randint(0, self.pad_window, 4)
-
             
             x_scaled = self.__scale(x, default_w + w, default_h + h)
             x_scaled_padded = np.pad(x_scaled, ((p_t, p_b), (p_l, p_r)), 'constant')

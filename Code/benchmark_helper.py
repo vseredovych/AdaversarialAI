@@ -137,20 +137,6 @@ def benchmark_defense_by_model(X, Y_true, y_true, model=None, attack=None, sampl
         scores[idx] = accuracy_score(model.predict(X_adv), y_true)
     return norms, scores, attack.__name__
 
-def benchmark_attack_by_model(X, Y_true, y_true, model=None, attack=None, samples=100, num_steps=0, a=0, b=0.5):
-    y_correct_idx = ((model.predict(X) == y_true) == y_true)
-
-    norms = np.linspace(a, b, num=num_steps)
-    scores = np.zeros(norms.shape)
-
-    for idx, norm in enumerate(norms):
-        X_normalize = normalize(X[y_correct_idx][0:samples])
-        y_true = y_true[0:samples].reshape(samples)
-
-        X_adv = get_adv_by_model_norm(X_normalize, Y_true[y_correct_idx], model=model, attack=attack, norm=norm)
-        scores[idx] = 1 - accuracy_score(model.predict(X_adv), y_true)
-    return norms, scores, attack.__name__
-
 
 def benchmark_defense_models_visual(X, Y_true, y_true, model=None, samples=100, num_steps=10):
     x1, y1, label1 = benchmark_defense_by_model(X, Y_true, y_true, model=model, attack=AttackFGSM, samples=samples, num_steps=num_steps)
