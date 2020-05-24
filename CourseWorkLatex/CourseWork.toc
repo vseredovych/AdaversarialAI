@@ -10,36 +10,50 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Основні поняття}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Модель і датасет}{5}%
+\contentsline {chapter}{\numberline {2}Модель}{5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Мультикласова логістична регресія}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Датасет}{6}%
+\contentsline {section}{\numberline {2.2}Датасет}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Тренування моделі}{6}%
+\contentsline {section}{\numberline {2.3}Тренування моделі}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Методи атак}{8}%
+\contentsline {subsection}{\numberline {2.3.1}Обробка даних}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}FGSM}{9}%
+\contentsline {subsection}{\numberline {2.3.2}Оптимізація моделі}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}I-FGSM}{10}%
+\contentsline {subsubsection}{Mini batch gradient descent}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}TI-FGSM}{11}%
+\contentsline {subsubsection}{Momentum}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}MI-FGSM}{11}%
+\contentsline {subsection}{\numberline {2.3.3}Тренування}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Методи атак}{9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}FGSM}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}I-FGSM}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}TI-FGSM}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}MI-FGSM}{12}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}DeepFool}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Методи захисту}{15}%
+\contentsline {chapter}{\numberline {4}Методи захисту}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Randomization}{15}%
+\contentsline {section}{\numberline {4.1}Randomization}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Pixel Reflection}{16}%
+\contentsline {section}{\numberline {4.2}Pixel Reflection}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Аналіз алгоритмів}{17}%
+\contentsline {chapter}{\numberline {5}Аналіз алгоритмів}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Аналіз атак}{17}%
+\contentsline {section}{\numberline {5.1}Аналіз атак}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Аналіз захисту}{18}%
+\contentsline {section}{\numberline {5.2}Аналіз захисту}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Висновок}{19}%
+\contentsline {subsubsection}{Randomization}{19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Pixel Deflection}{19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Висновок}{21}%

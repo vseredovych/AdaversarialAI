@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7400 64-bit)  (format=lualatex 2020.5.23)  23 MAY 2020 22:17
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7400 64-bit)  (format=lualatex 2020.5.23)  25 MAY 2020 02:08
  restricted system commands enabled.
 **CourseWork.tex
 (./CourseWork.tex
@@ -767,6 +767,17 @@ Package caption Info: Standard document class detected.
 (D:/Apps/MickTech/tex/latex/physics/physics.sty
 Package: physics 
 )
+(D:/Apps/MickTech/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(D:/Apps/MickTech/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (D:/Apps/MickTech/tex/latex/listings/listings.sty
 \lst@mode=\count291
 \lst@gtempboxa=\box58
@@ -1094,29 +1105,29 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./CourseWork.aux)
 \openout1 = CourseWork.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 80
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 83
 .
  (D:/Apps/MickTech/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
 
 (D:/Apps/MickTech/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1152,65 +1163,65 @@ ABD: EveryShipout initializing macros
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
-\symlegacymaths=\mathgroup5
+\symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 80.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 80.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 80.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 80.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 80.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 80.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 80.
-LaTeX Font Info:    Redeclaring math accent \check on input line 80.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 80.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 80.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 80.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 80.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 83.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 83.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 83.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 83.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 83.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 83.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 83.
+LaTeX Font Info:    Redeclaring math accent \check on input line 83.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 83.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 83.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 83.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 83.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 80.
+(Font)              `operators' in the math version `normal' on input line 83.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 80
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 83
 .
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 80.
+(Font)              `operators' in the math version `bold' on input line 83.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 8
-0.
+3.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on i
-nput line 80.
+nput line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 
-80.
+83.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 8
-0.
+3.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 80.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 80.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 83.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on i
-nput line 80.
+nput line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input line
- 80.
+ 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 80.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 80.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 83.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1271,13 +1282,25 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'CourseWork.bbl' found.
  (./CourseWork.bbl)
-Package biblatex Info: Reference section=0 on input line 80.
-Package biblatex Info: Reference segment=0 on input line 80.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 103
+Package biblatex Info: Reference section=0 on input line 83.
+Package biblatex Info: Reference segment=0 on input line 83.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 106
 .
 
 (D:/Apps/MickTech/tex/latex/jknappen/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 106.
+
+
+(D:/Apps/MickTech/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 106.
+
+
+(D:/Apps/MickTech/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2
 
 {C:/Users/victo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (./CourseWo
@@ -1291,120 +1314,185 @@ rk.toc)
 
 ]
 Розділ 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+
+ []
+
 [3
 
-] [4]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
+
+ []
+
+[4]
 Розділ 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--235
+Underfull \hbox (badness 10000) in paragraph at lines 225--238
 
  []
 
 [5
 
 ]
-<resources/minist_dataset.jpg, id=32, 572.1375pt x 559.08875pt>
-File: resources/minist_dataset.jpg Graphic file (type jpg)
-<use resources/minist_dataset.jpg>
-Package luatex.def Info: resources/minist_dataset.jpg  used on input line 261.
-(luatex.def)             Requested size: 199.16626pt x 194.62614pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6] [7<./resources/minist_dataset.jpg>]
+<resources/minist_dataset.pdf, id=31, 558.23871pt x 545.6385pt>
+File: resources/minist_dataset.pdf Graphic file (type pdf)
+<use resources/minist_dataset.pdf>
+Package luatex.def Info: resources/minist_dataset.pdf  used on input line 283.
+(luatex.def)             Requested size: 199.16626pt x 194.66464pt.
+ [6] [7<./resources/minist_dataset.pdf>] [8]
 Розділ 3.
-[8
+[9
 
-] [9]
-<resources/i-fgsm-example.png, id=49, 866.5173pt x 338.2236pt>
-File: resources/i-fgsm-example.png Graphic file (type png)
-<use resources/i-fgsm-example.png>
-Package luatex.def Info: resources/i-fgsm-example.png  used on input line 424.
-(luatex.def)             Requested size: 497.92325pt x 194.3532pt.
+] [10]
+<resources/i-fgsm-example.pdf, id=185, 852.70445pt x 320.86436pt>
+File: resources/i-fgsm-example.pdf Graphic file (type pdf)
+<use resources/i-fgsm-example.pdf>
+Package luatex.def Info: resources/i-fgsm-example.pdf  used on input line 471.
+(luatex.def)             Requested size: 448.12788pt x 168.62767pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10] [11<./resources/i-fgsm-example.png>] [12]
-Overfull \hbox (9.19498pt too wide) in paragraph at lines 473--474
+[11] [12<./resources/i-fgsm-example.pdf>]
+Overfull \hbox (9.19498pt too wide) in paragraph at lines 520--521
 []\TU/TimesNewRoman(0)/m/n/14.4 DeepFool бу-ла впер-ше пред-ст
 ав-ле-на в ро-бо-ті Moosavi-Dezfooli, Fawzi та Frossard
  []
 
-<resources/deepfool.jpg, id=62, 856.70062pt x 445.665pt>
+<resources/deepfool.jpg, id=248, 856.70062pt x 445.665pt>
 File: resources/deepfool.jpg Graphic file (type jpg)
 <use resources/deepfool.jpg>
-Package luatex.def Info: resources/deepfool.jpg  used on input line 477.
+Package luatex.def Info: resources/deepfool.jpg  used on input line 524.
 (luatex.def)             Requested size: 497.92325pt x 259.0231pt.
-[13<./resources/deepfool.jpg>]
-<resources/deepfool-example.png, id=67, 866.5173pt x 338.2236pt>
-File: resources/deepfool-example.png Graphic file (type png)
-<use resources/deepfool-example.png>
-Package luatex.def Info: resources/deepfool-example.png  used on input line 538.
 
-(luatex.def)             Requested size: 248.96162pt x 97.17401pt.
- [14<./resources/deepfool-example.png>]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13]
+<resources/deepfool-example.pdf, id=255, 852.70445pt x 320.86436pt>
+File: resources/deepfool-example.pdf Graphic file (type pdf)
+<use resources/deepfool-example.pdf>
+Package luatex.def Info: resources/deepfool-example.pdf  used on input line 581.
+
+(luatex.def)             Requested size: 497.92325pt x 187.36462pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14<./resources/deepfool.jpg>] [15<./resources/deepfool-example.pdf>]
 Розділ 4.
-[15
-
-] [16]
-Розділ 5.
-<resources/attacks_bench_8_6.png, id=78, 502.2765pt x 391.7034pt>
-File: resources/attacks_bench_8_6.png Graphic file (type png)
-<use resources/attacks_bench_8_6.png>
-Package luatex.def Info: resources/attacks_bench_8_6.png  used on input line 572
-.
-(luatex.def)             Requested size: 243.98512pt x 190.27477pt.
-<resources/defenses_bench_8_6.png, id=79, 499.3857pt x 391.7034pt>
-File: resources/defenses_bench_8_6.png Graphic file (type png)
-<use resources/defenses_bench_8_6.png>
-Package luatex.def Info: resources/defenses_bench_8_6.png  used on input line 57
-7.
-(luatex.def)             Requested size: 243.98512pt x 191.37451pt.
-[17
-
-] [18<./resources/attacks_bench_8_6.png><./resources/defenses_bench_8_6.png>]
-Розділ 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 591--593
-
- []
-
-[19
+[16
 
 ]
-Overfull \hbox (22.22179pt too wide) in paragraph at lines 604--604
+<resources/classactivationmap.pdf, id=321, 583.08466pt x 265.25104pt>
+File: resources/classactivationmap.pdf Graphic file (type pdf)
+<use resources/classactivationmap.pdf>
+Package luatex.def Info: resources/classactivationmap.pdf  used on input line 60
+8.
+(luatex.def)             Requested size: 497.92325pt x 226.51675pt.
+ [17<./resources/classactivationmap.pdf>]
+Розділ 5.
+<resources/attacks_bench_8_6.pdf, id=367, 487.97307pt x 374.55936pt>
+File: resources/attacks_bench_8_6.pdf Graphic file (type pdf)
+<use resources/attacks_bench_8_6.pdf>
+Package luatex.def Info: resources/attacks_bench_8_6.pdf  used on input line 621
+.
+(luatex.def)             Requested size: 243.98512pt x 187.2792pt.
+<resources/defenses_bench_8_6.pdf, id=368, 484.78929pt x 374.55936pt>
+File: resources/defenses_bench_8_6.pdf Graphic file (type pdf)
+<use resources/defenses_bench_8_6.pdf>
+Package luatex.def Info: resources/defenses_bench_8_6.pdf  used on input line 62
+6.
+(luatex.def)             Requested size: 243.98512pt x 188.508pt.
+[18
+
+]
+<resources/fgsm_rand_defence.png, id=372, 499.3857pt x 390.9807pt>
+File: resources/fgsm_rand_defence.png Graphic file (type png)
+<use resources/fgsm_rand_defence.png>
+Package luatex.def Info: resources/fgsm_rand_defence.png  used on input line 643
+.
+(luatex.def)             Requested size: 159.33908pt x 124.75246pt.
+<resources/ifgsm_rand_defence.png, id=373, 499.3857pt x 390.9807pt>
+File: resources/ifgsm_rand_defence.png Graphic file (type png)
+<use resources/ifgsm_rand_defence.png>
+Package luatex.def Info: resources/ifgsm_rand_defence.png  used on input line 64
+6.
+(luatex.def)             Requested size: 159.33908pt x 124.75246pt.
+<resources/deepfool_rand_defence.png, id=374, 499.3857pt x 390.9807pt>
+File: resources/deepfool_rand_defence.png Graphic file (type png)
+<use resources/deepfool_rand_defence.png>
+Package luatex.def Info: resources/deepfool_rand_defence.png  used on input line
+ 649.
+(luatex.def)             Requested size: 159.33908pt x 124.75246pt.
+ [19<./resources/attacks_bench_8_6.pdf><./resources/defenses_bench_8_6.pdf>]
+<resources/fgsm_defl_defence.png, id=504, 499.3857pt x 390.9807pt>
+File: resources/fgsm_defl_defence.png Graphic file (type png)
+<use resources/fgsm_defl_defence.png>
+Package luatex.def Info: resources/fgsm_defl_defence.png  used on input line 662
+.
+(luatex.def)             Requested size: 159.33908pt x 124.75246pt.
+<resources/ifgsm_defl_defence.png, id=505, 499.3857pt x 390.9807pt>
+File: resources/ifgsm_defl_defence.png Graphic file (type png)
+<use resources/ifgsm_defl_defence.png>
+Package luatex.def Info: resources/ifgsm_defl_defence.png  used on input line 66
+5.
+(luatex.def)             Requested size: 159.33908pt x 124.75246pt.
+<resources/deepfool_defl_defence.png, id=506, 499.3857pt x 390.9807pt>
+File: resources/deepfool_defl_defence.png Graphic file (type png)
+<use resources/deepfool_defl_defence.png>
+Package luatex.def Info: resources/deepfool_defl_defence.png  used on input line
+ 668.
+(luatex.def)             Requested size: 159.33908pt x 124.75246pt.
+ [20<./resources/fgsm_rand_defence.png><./resources/ifgsm_rand_defence.png><./re
+sources/deepfool_rand_defence.png><./resources/fgsm_defl_defence.png><./resource
+s/ifgsm_defl_defence.png><./resources/deepfool_defl_defence.png>]
+Розділ 6.
+[21
+
+]
+Overfull \hbox (22.22179pt too wide) in paragraph at lines 692--692
 []\TU/TimesNewRoman(0)/m/n/14.4 Ian J. Goodfellow, Jonathon Shlens та Christia
 n Szegedy. \TU/TimesNewRoman(0)/m/it/14.4 Explaining and Harnessing
  []
 
 
-Overfull \hbox (10.05525pt too wide) in paragraph at lines 604--604
+Overfull \hbox (10.05525pt too wide) in paragraph at lines 692--692
 []\TU/TimesNewRoman(0)/m/n/14.4 Seyed-Mohsen Moosavi-Dezfooli, Alhussein Fawzi 
 та Pascal Frossard. \TU/TimesNewRoman(0)/m/it/14.4 DeepFool:
  []
 
 
-Overfull \hbox (3.5046pt too wide) in paragraph at lines 604--604
+Overfull \hbox (3.5046pt too wide) in paragraph at lines 692--692
 []\TU/TimesNewRoman(0)/m/n/14.4 Muzammal Naseer, Salman H. Khan та Fatih Porik
 li. \TU/TimesNewRoman(0)/m/it/14.4 Local Gradients Smoothing:
  []
 
 
-Overfull \hbox (10.08969pt too wide) in paragraph at lines 604--604
+Overfull \hbox (10.08969pt too wide) in paragraph at lines 692--692
 \TU/TimesNewRoman(0)/m/it/14.4 Defense against localized adversarial attacks\TU
 /TimesNewRoman(0)/m/n/14.4 . 2018. arXiv: $\TU/lmtt/m/n/14.4 1807 . 01216$ [cs.C
 V]\TU/TimesNewRoman(0)/m/n/14.4 . 
  []
 
 
-Overfull \hbox (4.32356pt too wide) in paragraph at lines 604--604
+Overfull \hbox (4.32356pt too wide) in paragraph at lines 692--692
 []\TU/TimesNewRoman(0)/m/n/14.4 Gokula Krishnan Santhanam та Paulina Grnarova.
  \TU/TimesNewRoman(0)/m/it/14.4 Defending Against Adversarial
  []
 
-[20
+[22
 
 ] (./CourseWork.aux)
 
@@ -1416,16 +1504,16 @@ Package logreq Info: Writing requests to 'CourseWork.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 27479 strings out of 481089
+ 28073 strings out of 481089
  100000,1373583 words of node,token memory allocated
- 665 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 39 attribute, 67 glue_spec
-, 20 attribute_list, 2 write nodes
-   avail lists: 1:1,2:1446,3:188,4:78,5:370,6:43,7:3132,8:92,9:612,10:10,11:340,
+ 683 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 45 attribute, 67 glue_spec
+, 23 attribute_list, 2 write nodes
+   avail lists: 1:1,2:1326,3:135,4:50,5:362,6:33,7:2574,8:92,9:612,10:12,11:411,
 12:1
- 43935 multiletter control sequences out of 65536+200000
- 94 fonts using 25657979 bytes
- 72i,15n,99p,1465b,1731s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44459 multiletter control sequences out of 65536+200000
+ 106 fonts using 26399803 bytes
+ 72i,15n,99p,1871b,1738s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/apps/micktech/fonts/opentype/public/lm/lmmono12-regular.otf><C:/WINDOWS/Font
 s/timesi.ttf><C:/WINDOWS/Fonts/times.ttf><C:/WINDOWS/Fonts/timesbd.ttf><D:/Apps/
 MickTech/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Apps/MickTech/fonts/type1
@@ -1435,10 +1523,11 @@ ickTech/fonts/type1/public/amsfonts/cm/cmmib10.pfb><D:/Apps/MickTech/fonts/type1
 /public/amsfonts/cm/cmr10.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/c
 mr12.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Apps/Mick
 Tech/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Apps/MickTech/fonts/type1/pub
-lic/amsfonts/cm/cmsy7.pfb><D:/Apps/MickTech/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on CourseWork.pdf (21 pages, 564938 bytes).
+lic/amsfonts/cm/cmsy7.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/symbols/
+msbm10.pfb><D:/Apps/MickTech/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on CourseWork.pdf (23 pages, 794837 bytes).
 
-PDF statistics: 155 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 586 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -44,8 +44,8 @@ class CustomLogisticRegression():
  
         # Y transformations
         self.Y_ = Y_vert.T
-
-        self.W = np.full(( self.X_.shape[0],self.Y_.shape[0]),0.01)
+        #self.W = np.random.randn(self.X_.shape[0], self.Y_.shape[0]) / np.sqrt(self.Y_.shape[0])
+        self.W = np.full((self.X_.shape[0], self.Y_.shape[0]), 0.01)
         self.b = 0.0
         self.W, self.b, self.Js = self.__gradient_descent(
             self.X_, self.Y_, self.W, self.b, self.learning_rate, self.num_iters, self.epsilon, self.momentum, self.batch_size
@@ -69,6 +69,22 @@ class CustomLogisticRegression():
         
         return y_pred
 
+    def predict_proba(self, X):
+         # Check is fit had been called
+        check_is_fitted(self)
+        # Input validation
+        X = check_array(X)
+
+        if self.normalize:
+            X_norm = (X - self.__mean) / self.__std
+            z = self.__stable_softmax(np.dot(self.W.T,X_norm.T)+self.b)
+            return z, np.dot(self.W.T,X_norm.T)+self.b
+        else:
+            z = self.__stable_softmax(np.dot(self.W.T,X.T)+self.b)
+            return z, np.dot(self.W.T,X.T)+self.b
+ 
+
+    
     def predict_by_labels(self, X, y_labels):
         # Check is fit had been called
         check_is_fitted(self)
@@ -145,7 +161,8 @@ class CustomLogisticRegression():
         dz = A - Y
         derivative_weights = (1 / m) * np.dot(X, dz.T)
         derivative_bias = (1 / m) * np.sum(dz)
-
+        self.derivative_weights = derivative_weights
+        self.derivative_bias = derivative_bias
         return cost, derivative_weights, derivative_bias
 
     def __create_mini_batches(self, X, Y, batch_size):
