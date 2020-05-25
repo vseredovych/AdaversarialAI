@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7400 64-bit)  (format=lualatex 2020.5.23)  25 MAY 2020 02:08
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7400 64-bit)  (format=lualatex 2020.5.23)  25 MAY 2020 13:02
  restricted system commands enabled.
 **CourseWork.tex
 (./CourseWork.tex
@@ -1380,17 +1380,13 @@ Package luatex.def Info: resources/deepfool.jpg  used on input line 524.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [13]
-<resources/deepfool-example.pdf, id=255, 852.70445pt x 320.86436pt>
+<resources/deepfool-example.pdf, id=254, 852.70445pt x 320.86436pt>
 File: resources/deepfool-example.pdf Graphic file (type pdf)
 <use resources/deepfool-example.pdf>
-Package luatex.def Info: resources/deepfool-example.pdf  used on input line 581.
+Package luatex.def Info: resources/deepfool-example.pdf  used on input line 582.
 
 (luatex.def)             Requested size: 497.92325pt x 187.36462pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[14<./resources/deepfool.jpg>] [15<./resources/deepfool-example.pdf>]
+ [14<./resources/deepfool.jpg>] [15<./resources/deepfool-example.pdf>]
 Розділ 4.
 [16
 
@@ -1399,100 +1395,106 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: resources/classactivationmap.pdf Graphic file (type pdf)
 <use resources/classactivationmap.pdf>
 Package luatex.def Info: resources/classactivationmap.pdf  used on input line 60
-8.
+9.
 (luatex.def)             Requested size: 497.92325pt x 226.51675pt.
- [17<./resources/classactivationmap.pdf>]
+ [17<./resources/classactivationmap.pdf>] [18]
 Розділ 5.
-<resources/attacks_bench_8_6.pdf, id=367, 487.97307pt x 374.55936pt>
+<resources/attacks_bench_8_6.pdf, id=370, 487.97307pt x 374.55936pt>
 File: resources/attacks_bench_8_6.pdf Graphic file (type pdf)
 <use resources/attacks_bench_8_6.pdf>
-Package luatex.def Info: resources/attacks_bench_8_6.pdf  used on input line 621
+Package luatex.def Info: resources/attacks_bench_8_6.pdf  used on input line 625
 .
 (luatex.def)             Requested size: 243.98512pt x 187.2792pt.
-<resources/defenses_bench_8_6.pdf, id=368, 484.78929pt x 374.55936pt>
+
+Underfull \hbox (badness 1259) in paragraph at lines 626--626
+[]\TU/TimesNewRoman(0)/m/n/14.4 Рис. 5.1: |Гра-фік за-ле-жно-
+сті успі-шно-
+ []
+
+<resources/defenses_bench_8_6.pdf, id=371, 484.78929pt x 374.55936pt>
 File: resources/defenses_bench_8_6.pdf Graphic file (type pdf)
 <use resources/defenses_bench_8_6.pdf>
-Package luatex.def Info: resources/defenses_bench_8_6.pdf  used on input line 62
-6.
+Package luatex.def Info: resources/defenses_bench_8_6.pdf  used on input line 63
+0.
 (luatex.def)             Requested size: 243.98512pt x 188.508pt.
-[18
+[19
 
 ]
-<resources/fgsm_rand_defence.png, id=372, 499.3857pt x 390.9807pt>
+<resources/fgsm_rand_defence.png, id=375, 499.3857pt x 390.9807pt>
 File: resources/fgsm_rand_defence.png Graphic file (type png)
 <use resources/fgsm_rand_defence.png>
-Package luatex.def Info: resources/fgsm_rand_defence.png  used on input line 643
+Package luatex.def Info: resources/fgsm_rand_defence.png  used on input line 647
 .
 (luatex.def)             Requested size: 159.33908pt x 124.75246pt.
-<resources/ifgsm_rand_defence.png, id=373, 499.3857pt x 390.9807pt>
+<resources/ifgsm_rand_defence.png, id=376, 499.3857pt x 390.9807pt>
 File: resources/ifgsm_rand_defence.png Graphic file (type png)
 <use resources/ifgsm_rand_defence.png>
-Package luatex.def Info: resources/ifgsm_rand_defence.png  used on input line 64
-6.
+Package luatex.def Info: resources/ifgsm_rand_defence.png  used on input line 65
+0.
 (luatex.def)             Requested size: 159.33908pt x 124.75246pt.
-<resources/deepfool_rand_defence.png, id=374, 499.3857pt x 390.9807pt>
+<resources/deepfool_rand_defence.png, id=377, 499.3857pt x 390.9807pt>
 File: resources/deepfool_rand_defence.png Graphic file (type png)
 <use resources/deepfool_rand_defence.png>
 Package luatex.def Info: resources/deepfool_rand_defence.png  used on input line
- 649.
+ 653.
 (luatex.def)             Requested size: 159.33908pt x 124.75246pt.
- [19<./resources/attacks_bench_8_6.pdf><./resources/defenses_bench_8_6.pdf>]
-<resources/fgsm_defl_defence.png, id=504, 499.3857pt x 390.9807pt>
+ [20<./resources/attacks_bench_8_6.pdf><./resources/defenses_bench_8_6.pdf>]
+<resources/fgsm_defl_defence.png, id=508, 499.3857pt x 390.9807pt>
 File: resources/fgsm_defl_defence.png Graphic file (type png)
 <use resources/fgsm_defl_defence.png>
-Package luatex.def Info: resources/fgsm_defl_defence.png  used on input line 662
+Package luatex.def Info: resources/fgsm_defl_defence.png  used on input line 666
 .
 (luatex.def)             Requested size: 159.33908pt x 124.75246pt.
-<resources/ifgsm_defl_defence.png, id=505, 499.3857pt x 390.9807pt>
+<resources/ifgsm_defl_defence.png, id=509, 499.3857pt x 390.9807pt>
 File: resources/ifgsm_defl_defence.png Graphic file (type png)
 <use resources/ifgsm_defl_defence.png>
 Package luatex.def Info: resources/ifgsm_defl_defence.png  used on input line 66
-5.
+9.
 (luatex.def)             Requested size: 159.33908pt x 124.75246pt.
-<resources/deepfool_defl_defence.png, id=506, 499.3857pt x 390.9807pt>
+<resources/deepfool_defl_defence.png, id=510, 499.3857pt x 390.9807pt>
 File: resources/deepfool_defl_defence.png Graphic file (type png)
 <use resources/deepfool_defl_defence.png>
 Package luatex.def Info: resources/deepfool_defl_defence.png  used on input line
- 668.
+ 672.
 (luatex.def)             Requested size: 159.33908pt x 124.75246pt.
- [20<./resources/fgsm_rand_defence.png><./resources/ifgsm_rand_defence.png><./re
+ [21<./resources/fgsm_rand_defence.png><./resources/ifgsm_rand_defence.png><./re
 sources/deepfool_rand_defence.png><./resources/fgsm_defl_defence.png><./resource
 s/ifgsm_defl_defence.png><./resources/deepfool_defl_defence.png>]
 Розділ 6.
-[21
+[22
 
 ]
-Overfull \hbox (22.22179pt too wide) in paragraph at lines 692--692
+Overfull \hbox (22.22179pt too wide) in paragraph at lines 696--696
 []\TU/TimesNewRoman(0)/m/n/14.4 Ian J. Goodfellow, Jonathon Shlens та Christia
 n Szegedy. \TU/TimesNewRoman(0)/m/it/14.4 Explaining and Harnessing
  []
 
 
-Overfull \hbox (10.05525pt too wide) in paragraph at lines 692--692
+Overfull \hbox (10.05525pt too wide) in paragraph at lines 696--696
 []\TU/TimesNewRoman(0)/m/n/14.4 Seyed-Mohsen Moosavi-Dezfooli, Alhussein Fawzi 
 та Pascal Frossard. \TU/TimesNewRoman(0)/m/it/14.4 DeepFool:
  []
 
 
-Overfull \hbox (3.5046pt too wide) in paragraph at lines 692--692
+Overfull \hbox (3.5046pt too wide) in paragraph at lines 696--696
 []\TU/TimesNewRoman(0)/m/n/14.4 Muzammal Naseer, Salman H. Khan та Fatih Porik
 li. \TU/TimesNewRoman(0)/m/it/14.4 Local Gradients Smoothing:
  []
 
 
-Overfull \hbox (10.08969pt too wide) in paragraph at lines 692--692
+Overfull \hbox (10.08969pt too wide) in paragraph at lines 696--696
 \TU/TimesNewRoman(0)/m/it/14.4 Defense against localized adversarial attacks\TU
 /TimesNewRoman(0)/m/n/14.4 . 2018. arXiv: $\TU/lmtt/m/n/14.4 1807 . 01216$ [cs.C
 V]\TU/TimesNewRoman(0)/m/n/14.4 . 
  []
 
 
-Overfull \hbox (4.32356pt too wide) in paragraph at lines 692--692
+Overfull \hbox (4.32356pt too wide) in paragraph at lines 696--696
 []\TU/TimesNewRoman(0)/m/n/14.4 Gokula Krishnan Santhanam та Paulina Grnarova.
  \TU/TimesNewRoman(0)/m/it/14.4 Defending Against Adversarial
  []
 
-[22
+[23
 
 ] (./CourseWork.aux)
 
@@ -1509,7 +1511,7 @@ Here is how much of LuaTeX's memory you used:
  683 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 45 attribute, 67 glue_spec
 , 23 attribute_list, 2 write nodes
-   avail lists: 1:1,2:1326,3:135,4:50,5:362,6:33,7:2574,8:92,9:612,10:12,11:411,
+   avail lists: 1:1,2:1326,3:135,4:50,5:363,6:33,7:2679,8:92,9:612,10:12,11:407,
 12:1
  44459 multiletter control sequences out of 65536+200000
  106 fonts using 26399803 bytes
@@ -1525,9 +1527,9 @@ mr12.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Apps/Mick
 Tech/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Apps/MickTech/fonts/type1/pub
 lic/amsfonts/cm/cmsy7.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb><D:/Apps/MickTech/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on CourseWork.pdf (23 pages, 794837 bytes).
+Output written on CourseWork.pdf (24 pages, 792432 bytes).
 
-PDF statistics: 586 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 589 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

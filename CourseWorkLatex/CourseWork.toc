@@ -36,7 +36,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}TI-FGSM}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}MI-FGSM}{12}%
+\contentsline {section}{\numberline {3.4}MI-FGSM}{13}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}DeepFool}{13}%
 \defcounter {refsection}{0}\relax 
@@ -46,14 +46,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Pixel Reflection}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Аналіз алгоритмів}{18}%
+\contentsline {chapter}{\numberline {5}Аналіз алгоритмів}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Аналіз атак}{18}%
+\contentsline {section}{\numberline {5.1}Аналіз атак}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Аналіз захисту}{19}%
+\contentsline {section}{\numberline {5.2}Аналіз захисту}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Randomization}{19}%
+\contentsline {subsubsection}{Randomization}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Pixel Deflection}{19}%
+\contentsline {subsubsection}{Pixel Deflection}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Висновок}{21}%
+\contentsline {chapter}{\numberline {6}Висновок}{22}%
