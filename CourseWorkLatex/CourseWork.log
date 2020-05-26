@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7400 64-bit)  (format=lualatex 2020.5.23)  25 MAY 2020 13:12
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7400 64-bit)  (format=lualatex 2020.5.23)  26 MAY 2020 12:27
  restricted system commands enabled.
 **CourseWork.tex
 (./CourseWork.tex
@@ -1511,7 +1511,7 @@ Here is how much of LuaTeX's memory you used:
  683 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 45 attribute, 67 glue_spec
 , 23 attribute_list, 2 write nodes
-   avail lists: 1:1,2:1326,3:135,4:50,5:363,6:33,7:2679,8:92,9:612,10:12,11:407,
+   avail lists: 1:1,2:1326,3:135,4:50,5:363,6:33,7:2678,8:92,9:612,10:12,11:407,
 12:1
  44459 multiletter control sequences out of 65536+200000
  106 fonts using 26399803 bytes
@@ -1527,7 +1527,7 @@ mr12.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Apps/Mick
 Tech/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Apps/MickTech/fonts/type1/pub
 lic/amsfonts/cm/cmsy7.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb><D:/Apps/MickTech/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on CourseWork.pdf (24 pages, 792421 bytes).
+Output written on CourseWork.pdf (24 pages, 792419 bytes).
 
 PDF statistics: 589 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
