@@ -1,0 +1,15 @@
+\babel@toc {ukrainian}{}
+\beamer@sectionintoc {1}{Постановка задачі}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Етапи роботи}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Модель}{4}{0}{1}
+\beamer@sectionintoc {2}{Методи атак}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{FGSM}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{I-FGSM}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{DeepFool}{7}{0}{2}
+\beamer@sectionintoc {3}{Методи захисту}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Randomization}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Pixel Reflection}{10}{0}{3}
+\beamer@sectionintoc {4}{Аналіз алгоритмів}{11}{0}{4}
+\beamer@subsectionintoc {4}{1}{Аналіз атак}{11}{0}{4}
+\beamer@subsectionintoc {4}{2}{Аналіз захисту}{12}{0}{4}
+\beamer@sectionintoc {5}{Висновок}{14}{0}{5}
