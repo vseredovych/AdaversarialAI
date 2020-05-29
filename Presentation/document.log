@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7400 64-bit)  (format=lualatex 2020.5.23)  29 MAY 2020 02:05
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7400 64-bit)  (format=lualatex 2020.5.23)  29 MAY 2020 09:59
  restricted system commands enabled.
 **document.tex
 (./document.tex
@@ -1589,15 +1589,15 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  28248 strings out of 481089
  125171,953878 words of node,token memory allocated
- 9636 words of node memory still in use:
-   29 hlist, 9 vlist, 4 rule, 152 disc, 3 local_par, 2 math, 133 glue, 110 kern,
- 12 penalty, 763 glyph, 85 attribute, 64 glue_spec, 44 attribute_list, 4 write, 
-10 pdf_colorstack nodes
-   avail lists: 1:2,2:1151,3:233,4:186,5:242,6:68,7:1419,8:88,9:334,10:17,11:210
+ 6440 words of node memory still in use:
+   26 hlist, 9 vlist, 4 rule, 97 disc, 3 local_par, 2 math, 88 glue, 69 kern, 12
+ penalty, 471 glyph, 85 attribute, 64 glue_spec, 44 attribute_list, 4 write, 10 
+pdf_colorstack nodes
+   avail lists: 1:2,2:1151,3:233,4:186,5:283,6:68,7:1756,8:88,9:337,10:17,11:233
 
  44378 multiletter control sequences out of 65536+200000
  137 fonts using 45107435 bytes
- 58i,15n,81p,1302b,601s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 58i,15n,81p,815b,601s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/WINDOWS/Fonts/arialbi.ttf><C:/WINDOWS/Fonts/times.ttf><C:/WINDOWS/Fonts/aria
 li.ttf><C:/WINDOWS/Fonts/arialbd.ttf><C:/WINDOWS/Fonts/arial.ttf><D:/Apps/MickTe
 ch/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Apps/MickTech/fonts/type1/publi
@@ -1606,7 +1606,7 @@ pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Apps/MickTech
 /fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Apps/MickTech/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb><D:/Apps/MickTech/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 <D:/Apps/MickTech/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on document.pdf (14 pages, 1113651 bytes).
+Output written on document.pdf (14 pages, 1113193 bytes).
 
 PDF statistics: 844 PDF objects out of 1000 (max. 8388607)
  47 named destinations out of 1000 (max. 131072)
